@@ -1,0 +1,5 @@
+id,reason,detail
+px_02,no_valid_blocks,"pre_task_rest, condition ON"
+px_06,missing_file,/home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_06/px_06_pre_task_rest_clean-raw.fif
+px_07,missing_file,/home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_07/px_07_pre_task_rest_clean-raw.fif
+px_08,noisy_ica,post_task_rest: 56 of 60 ICs rejected

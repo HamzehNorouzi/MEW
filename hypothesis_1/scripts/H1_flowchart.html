@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hypothesis 1 — Analysis Flowchart</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<style>
+  :root{
+    --bg:#FBFAF8; --panel:#FFFFFF; --ink:#1A1815; --muted:#6B6659;
+    --line:#E3DFD7; --accent:#4A6FA5; --warn:#B0733A; --stop:#A34A4A;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 24px 80px}
+  h1{font-size:30px;margin:0 0 4px;letter-spacing:-.02em}
+  .sub{color:var(--muted);margin:0 0 32px;font-size:15px}
+  h2{font-size:20px;margin:44px 0 6px;letter-spacing:-.01em}
+  h2 .n{color:var(--accent);font-weight:600}
+  .cap{color:var(--muted);font-size:14px;margin:0 0 16px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+         padding:20px;overflow-x:auto}
+  .mermaid{display:flex;justify-content:center}
+  .notes{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+         border-radius:8px;padding:18px 22px;margin-top:20px}
+  .notes h3{margin:0 0 10px;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .notes ul{margin:0;padding-left:20px}
+  .notes li{margin-bottom:8px;font-size:14.5px}
+  code{background:#F2EFE9;padding:1px 5px;border-radius:4px;font-size:.9em;
+       font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .flag{border-left-color:var(--warn)}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Hypothesis 1 — Analysis Flowchart</h1>
+<p class="sub">Resting-state 2–3 Hz change score, ON vs OFF · MNE-Python extraction → R confirmatory statistics · draft for approval</p>
+
+<h2><span class="n">A.</span> Per-participant extraction (MNE-Python)</h2>
+<p class="cap">Runs once per <code>hx_XX</code> folder. Produces one epoch-level row per surviving epoch.</p>
+<div class="panel"><pre class="mermaid">
+flowchart TD
+  A0["derivatives/hx_XX"] --> A1["Read contralaterality CSV<br/>match id to folder name"]
+  A1 --> A2{"Side of stimulator"}
+  A2 -->|Right| A3L["Target ROI = LEFT<br/>C1 C3 C5 CP1 CP3 CP5"]
+  A2 -->|Left| A3R["Target ROI = RIGHT<br/>C2 C4 C6 CP2 CP4 CP6"]
+  A3L --> A4
+  A3R --> A4
+  A4["Read hx_XX_*_stage0.json<br/>check ICA reject count"] --> A5{"rejected ICs &ge; 80% of 60?"}
+  A5 -->|yes| X1["EXCLUDE participant<br/>reason = noisy_ica<br/>log id"]
+  A5 -->|no| B0
+
+  B0["For session in<br/>pre_task_rest, post_task_rest"] --> B1["Load *_clean-raw.fif"]
+  B1 --> B2["Read annotations<br/>1004 = Stim_ON, 1002 = Stim_OFF"]
+  B2 --> B3["Pair consecutive identical codes:<br/>block = onset(i) to onset(i+1)"]
+  B3 --> B4{"block duration &ge; 59 s?"}
+  B4 -->|no| B5["Discard block<br/>log id, session, code, duration"]
+  B4 -->|yes| B6["Crop block from raw"]
+  B5 --> B7
+  B6 --> B7["Epoch WITHIN each block:<br/>10 s fixed-length, non-overlapping,<br/>no baseline correction"]
+  B7 --> B8["Concatenate epochs across blocks<br/>within condition -> ON set, OFF set"]
+  B8 --> C0
+
+  C0["AutoReject: ONE fit per session file,<br/>ON + OFF epochs jointly"] --> C1["Log per cell:<br/>n_total, n_dropped_ar, n_retained_ar"]
+  C1 --> C2{"n_dropped_ar / n_total &gt; 50%<br/>in ANY of the 4 cells?"}
+  C2 -->|yes| X2["EXCLUDE participant<br/>reason = ar_epoch_loss<br/>log id + offending cell"]
+  C2 -->|no| D0
+
+  D0["compute_psd(method='welch')<br/>1-100 Hz, per epoch, per channel"] --> D1["Spatially average channels<br/>within LEFT ROI and RIGHT ROI<br/>-> 2 spectra per epoch"]
+  D1 --> D2["FOOOF / specparam v1 per epoch per ROI<br/>range [1,100] · peak_width [0,12]<br/>peak_threshold 1 · aperiodic 'knee'<br/>max_n_peaks 7 · min_peak_height 0.1"]
+  D2 --> D3["Store per epoch:<br/>fit error, r-squared,<br/>flattened spectrum = spectrum minus aperiodic fit"]
+  D3 --> D4["AUC of flattened spectrum<br/>over 2-3 Hz (trapezoid)"]
+  D4 --> E0[("h1_epoch_level.csv<br/>id · session · condition · ROI ·<br/>block · epoch · auc_2_3 · fit_error · r2")]
+
+  style X1 fill:#F6E9E9,stroke:#A34A4A
+  style X2 fill:#F6E9E9,stroke:#A34A4A
+  style E0 fill:#EAF0F8,stroke:#4A6FA5
+</pre></div>
+
+<div class="notes">
+<h3>Decisions locked in panel A</h3>
+<ul>
+<li><strong>Block detection (your Q1).</strong> A block needs <em>two</em> annotations of the same code. Block <code>i</code> runs from onset of marker <code>i</code> to onset of marker <code>i+1</code>, and is kept only if that span is <code>&ge; 59 s</code>. Shorter spans are discarded and logged. Nothing is assumed about how many blocks survive.</li>
+<li><strong>Epoching order.</strong> Epochs are cut <em>inside</em> each block, then pooled per condition. No epoch straddles the seam between two blocks recorded minutes apart. With two 60 s blocks this gives 6 + 6 = 12 epochs per condition per session; the code never hard-codes 12.</li>
+<li><strong>AutoReject (your Q4).</strong> One fit per session file, ON and OFF together, so both conditions face identical thresholds.</li>
+<li><strong>50% rule (your instruction).</strong> Applied to AutoReject drops only, evaluated on all four cells (pre-ON, pre-OFF, post-ON, post-OFF). Specparam drops are counted and logged separately and do not feed this rule (your Q5).</li>
+<li><strong>Both ROIs are always computed.</strong> The contralateral one is selected later, so the ipsilateral values stay in the file for any control analysis.</li>
+</ul>
+</div>
+
+<h2><span class="n">B.</span> Group-level assembly and export</h2>
+<p class="cap">Runs once, after every participant has passed through panel A. The group z-score (your Q3) forces this to be a second pass.</p>
+<div class="panel"><pre class="mermaid">
+flowchart TD
+  E0[("h1_epoch_level.csv<br/>all participants pooled")] --> F1["Z-score the FOOOF fit ERROR<br/>across ALL epochs of ALL participants"]
+  F1 --> F2{"z &gt; 2 ?"}
+  F2 -->|yes| F3["Drop epoch: poor model fit<br/>count per participant x cell"]
+  F2 -->|no| F4["Retain epoch"]
+  F3 --> F5
+  F4 --> F5["Log per participant:<br/>n_dropped_specparam,<br/>mean +/- SD r-squared of retained"]
+  F5 --> G1["Average auc_2_3 across retained epochs<br/>-> one value per id x session x condition x ROI"]
+  G1 --> G2["Select CONTRALATERAL ROI<br/>per participant"]
+  G2 --> G3["delta_ON  = post_ON  minus pre_ON<br/>delta_OFF = post_OFF minus pre_OFF"]
+  G3 --> G4["diff = delta_ON minus delta_OFF"]
+  G4 --> H0[("h1_participant_level.csv<br/>id · order · pre/post x ON/OFF ·<br/>delta_ON · delta_OFF · diff")]
+  H0 --> R0["h1_analysis.R"]
+
+  F5 --> L1[("h1_exclusions.csv<br/>h1_qc_report.csv<br/>h1_run.log")]
+
+  style H0 fill:#EAF0F8,stroke:#4A6FA5
+  style L1 fill:#F7F2E8,stroke:#B0733A
+  style R0 fill:#EAF0F8,stroke:#4A6FA5
+</pre></div>
+
+<div class="notes flag">
+<h3>One consequence of the group z-score you should be aware of</h3>
+<ul>
+<li>Because the fit metric is z-scored <em>across participants</em> (your Q3), adding participant N+1 shifts the group mean and SD, so an epoch that survived at N = 22 can be dropped at N = 23. Every interim Bayes factor must therefore be computed on a <strong>full re-run</strong> of panel B over the current sample, not by appending one row to the previous table. The script does exactly this. The log records the group mean and SD of fit error at each N so the history is auditable.</li>
+<li><strong>Which metric is z-scored.</strong> "Poor model performance = z &gt; 2" only works for a metric where <em>higher is worse</em>, so the z-score is applied to FOOOF's fit <strong>error</strong>. The r&sup2; is reported as the mean ± SD goodness-of-fit the protocol asks for, but is not the screening variable. Flag this if you intended otherwise.</li>
+</ul>
+</div>
+
+<h2><span class="n">C.</span> Statistics in R — main analysis and early stopping</h2>
+<p class="cap">Two separate branches off the same participant-level table. Different tails, different purposes.</p>
+<div class="panel"><pre class="mermaid">
+flowchart TD
+  H0[("h1_participant_level.csv")] --> S0{"branch"}
+
+  S0 --> M0["MAIN CONFIRMATORY ANALYSIS<br/>on the locked sample"]
+  M0 --> M1["Frequentist paired t-test<br/>delta_ON vs delta_OFF<br/>ONE-TAILED, alternative = 'greater'"]
+  M0 --> M2["Bayesian paired t-test<br/>JZS Cauchy prior, r = 0.707<br/>ONE-TAILED (nullInterval directional)"]
+  M1 --> M3["Report t, df, p, Cohen's d, 95% CI"]
+  M2 --> M4["Report BF10"]
+  M3 --> M5{"do the two agree?"}
+  M4 --> M5
+  M5 -->|no| M6["Conclude from the Bayesian result;<br/>report p alongside (Dienes 2021)"]
+  M5 -->|yes| M7["Report both"]
+
+  S0 --> P0["EARLY STOPPING RULE<br/>interim, decision-making"]
+  P0 --> P1["Order valid participants by enrolment"]
+  P1 --> P2["N = 22"]
+  P2 --> P3["Re-run panel B on first N participants<br/>(group z-score is sample-dependent)"]
+  P3 --> P4["Bayesian paired t-test, JZS r = 0.707<br/>TWO-SIDED -> BF10 for H1"]
+  P4 --> P5{"BF10 &gt; 3 or BF10 &lt; 1/3 ?"}
+  P5 -->|inconclusive| P6{"N &lt; 39 ?"}
+  P6 -->|yes| P7["N = N + 1<br/>collect one more participant"]
+  P7 --> P3
+  P6 -->|no| P8["Stop: maximum N = 39 reached"]
+  P5 -->|conclusive for H1| P9["H1 criterion MET at this N<br/>log N and BF10"]
+  P9 --> P10{"H2, H3, H4 also conclusive?"}
+  P10 -->|not evaluated here| P11["Data collection continues.<br/>H1 alone cannot stop the study."]
+  P8 --> M0
+  P11 --> P6
+
+  P9 --> Q0[("h1_sequential_bf.csv<br/>N · BF10 · verdict · n_valid · date")]
+
+  style M6 fill:#EAF0F8,stroke:#4A6FA5
+  style P11 fill:#F7F2E8,stroke:#B0733A
+  style Q0 fill:#EAF0F8,stroke:#4A6FA5
+</pre></div>
+
+<div class="notes flag">
+<h3>Early stopping — scope limit (your Q6)</h3>
+<ul>
+<li>The protocol's rule terminates collection only when <strong>all four</strong> metrics cross a boundary. This pipeline produces metric 1 only. It therefore outputs the H1 Bayes factor trajectory and a per-N verdict (<code>conclusive_H1</code> / <code>inconclusive</code>), and never issues a stop decision. The log states this explicitly so the interim record cannot be misread as a stop signal.</li>
+<li><strong>Two-sided for stopping, one-tailed for the main test.</strong> The protocol specifies two-sided interim tests but a directional confirmatory test. The script keeps these deliberately separate and labels both in the output.</li>
+<li><strong>Enrolment order.</strong> Sequential analysis needs the order participants were collected in. Folder-name sort (<code>hx_01</code>, <code>hx_02</code>, …) is used as the default. If your enrolment order differs from the numbering, add an <code>order</code> column to the contralaterality CSV and the script will use it.</li>
+</ul>
+</div>
+
+<h2><span class="n">D.</span> Logged outputs</h2>
+<p class="cap">Everything §3.5 asks to be "documented" or "reported", written to disk rather than printed.</p>
+<div class="panel">
+<table>
+<tr><th>File</th><th>Contents</th></tr>
+<tr><td><code>h1_run.log</code></td><td>Append-only console log across runs: every participant, every step, every exclusion with its reason, group z-score parameters per run.</td></tr>
+<tr><td><code>h1_qc_report.csv</code></td><td>One row per participant × session × condition: blocks found, blocks discarded as too short, block durations, n epochs total, n dropped by AutoReject, n dropped by specparam, n retained, mean ± SD r², rejected-IC count from stage 0.</td></tr>
+<tr><td><code>h1_exclusions.csv</code></td><td>Excluded participant IDs with reason (<code>noisy_ica</code>, <code>ar_epoch_loss</code>, <code>no_valid_blocks</code>, <code>missing_file</code>, <code>no_epochs_after_specparam</code>) and the offending cell.</td></tr>
+<tr><td><code>h1_epoch_level.csv</code></td><td>Every epoch that reached the PSD stage, with its AUC, fit error, r², and drop flags. The audit trail for panel B.</td></tr>
+<tr><td><code>h1_participant_level.csv</code></td><td>The analysis table handed to R: four cell means, both ROIs, target ROI, Δ<sub>ON</sub>, Δ<sub>OFF</sub>, diff.</td></tr>
+<tr><td><code>h1_sequential_bf.csv</code></td><td>Interim BF<sub>10</sub> at each N from 22 upward, with verdict.</td></tr>
+<tr><td><code>h1_analysis.R</code></td><td>R script: BayesFactor + base t.test, main analysis and sequential branch.</td></tr>
+</table>
+</div>
+
+<div class="notes flag">
+<h3>Two things to check before I write code</h3>
+<ul>
+<li><strong>Annotation codes.</strong> Your Q1 example used <code>1002</code> to illustrate "eyes_closed_Stim_ON", but your original spec says <code>1004</code> = ON and <code>1002</code> = OFF. I have used the original mapping. The codes are defined once at the top of the script as constants, so this is a one-line change if it is the other way round.</li>
+<li><strong>Protocol discrepancy, logged not silently fixed.</strong> §3.5 says "10 epochs per condition, exclude if more than 5 removed", written for 100 s blocks. Actual blocks are 60 s. The script applies your &gt;50% rule and writes a line into <code>h1_run.log</code> recording the deviation, so the registered-report record shows the change was deliberate.</li>
+</ul>
+</div>
+
+</div>
+<script>
+mermaid.initialize({
+  startOnLoad:true, theme:'base',
+  themeVariables:{
+    background:'#FFFFFF', primaryColor:'#F4F1EB', primaryTextColor:'#1A1815',
+    primaryBorderColor:'#C9C2B4', lineColor:'#8A8375', fontSize:'14px',
+    fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'
+  },
+  flowchart:{ nodeSpacing:36, rankSpacing:44, useMaxWidth:true }
+});
+</script>
+</body>
+</html>

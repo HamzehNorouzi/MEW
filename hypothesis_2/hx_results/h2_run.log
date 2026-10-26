@@ -1,0 +1,98 @@
+hx_01    ON 62/66   OFF 75/78   AutoReject dropped 8
+hx_02    ON 74/74   OFF 63/68   AutoReject dropped 6
+hx_03    ON 53/53   OFF 55/55   AutoReject dropped 0
+hx_04    ON 83/99   OFF 72/99   AutoReject dropped 43
+hx_05    ON 97/100   OFF 57/58   AutoReject dropped 6
+hx_06    ON 100/100   OFF 100/100   AutoReject dropped 0
+hx_07    ON 98/98   OFF 97/100   AutoReject dropped 4
+hx_08    ON 89/89   OFF 83/83   AutoReject dropped 0
+hx_09    ON 89/89   OFF 93/93   AutoReject dropped 0
+hx_10    ON 81/81   OFF 97/97   AutoReject dropped 0
+hx_11    ON 73/73   OFF 92/92   AutoReject dropped 2
+hx_12    ON 74/74   OFF 82/82   AutoReject dropped 0
+hx_13    excluded: 15 ON and 13 OFF trials after AutoReject
+hx_14    ON 89/93   OFF 93/99   AutoReject dropped 11
+hx_15    ON 69/95   OFF 89/90   AutoReject dropped 27
+hx_16    ON 95/96   OFF 87/90   AutoReject dropped 4
+hx_17    ON 97/97   OFF 85/85   AutoReject dropped 1
+hx_18    ON 60/60   OFF 104/104   AutoReject dropped 0
+hx_19    excluded: 8 ON and 19 OFF trials after AutoReject
+hx_20    ON 87/95   OFF 84/89   AutoReject dropped 13
+hx_21    ON 50/50   OFF 40/40   AutoReject dropped 0
+hx_22    ON 78/78   OFF 95/95   AutoReject dropped 2
+hx_23    ON 94/94   OFF 90/90   AutoReject dropped 1
+hx_24    ON 50/50   OFF 77/77   AutoReject dropped 2
+22 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_2/h2_erd.csv
+hx_01    ON 62/66   OFF 75/78   AutoReject dropped 8
+hx_02    ON 74/74   OFF 63/68   AutoReject dropped 6
+hx_03    ON 53/53   OFF 55/55   AutoReject dropped 0
+hx_04    ON 83/99   OFF 72/99   AutoReject dropped 43
+hx_05    ON 97/100   OFF 57/58   AutoReject dropped 6
+hx_06    ON 100/100   OFF 100/100   AutoReject dropped 0
+hx_07    ON 98/98   OFF 98/100   AutoReject dropped 3
+hx_08    ON 97/97   OFF 83/83   AutoReject dropped 0
+hx_09    ON 89/89   OFF 93/93   AutoReject dropped 0
+hx_10    ON 81/81   OFF 97/97   AutoReject dropped 0
+hx_11    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_12    ON 74/74   OFF 82/82   AutoReject dropped 0
+hx_13    excluded: 15 ON and 13 OFF trials after AutoReject
+hx_14    ON 93/93   OFF 97/99   AutoReject dropped 3
+hx_15    ON 69/95   OFF 89/90   AutoReject dropped 27
+hx_16    ON 95/96   OFF 87/90   AutoReject dropped 4
+hx_17    ON 97/97   OFF 85/85   AutoReject dropped 1
+hx_18    ON 60/60   OFF 104/104   AutoReject dropped 0
+hx_19    excluded: 8 ON and 19 OFF trials after AutoReject
+hx_20    ON 87/95   OFF 84/89   AutoReject dropped 13
+hx_21    ON 50/50   OFF 40/40   AutoReject dropped 0
+hx_22    ON 78/78   OFF 95/95   AutoReject dropped 2
+hx_23    ON 94/94   OFF 90/90   AutoReject dropped 1
+hx_24    ON 50/50   OFF 77/77   AutoReject dropped 2
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 51/51   OFF 100/100   AutoReject dropped 0
+hx_27    ON 33/33   OFF 56/56   AutoReject dropped 2
+hx_28    ON 47/47   OFF 50/50   AutoReject dropped 0
+hx_29    ON 41/41   OFF 51/51   AutoReject dropped 1
+25 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_2/h2_erd.csv
+hx_01    ON 62/66   OFF 75/78   AutoReject dropped 8
+hx_02    ON 74/74   OFF 63/68   AutoReject dropped 6
+hx_03    ON 53/53   OFF 55/55   AutoReject dropped 0
+hx_04    ON 83/99   OFF 72/99   AutoReject dropped 43
+hx_05    ON 97/100   OFF 57/58   AutoReject dropped 6
+hx_06    ON 100/100   OFF 100/100   AutoReject dropped 0
+hx_07    ON 98/98   OFF 98/100   AutoReject dropped 3
+hx_08    ON 97/97   OFF 83/83   AutoReject dropped 0
+hx_09    ON 89/89   OFF 93/93   AutoReject dropped 0
+hx_10    ON 81/81   OFF 97/97   AutoReject dropped 0
+hx_11    ON 73/73   OFF 92/92   AutoReject dropped 2
+hx_12    ON 74/74   OFF 82/82   AutoReject dropped 0
+hx_13    excluded: 15 ON and 13 OFF trials after AutoReject
+hx_14    ON 93/93   OFF 97/99   AutoReject dropped 3
+hx_15    ON 69/95   OFF 89/90   AutoReject dropped 27
+hx_16    ON 95/96   OFF 87/90   AutoReject dropped 4
+hx_17    ON 97/97   OFF 85/85   AutoReject dropped 1
+hx_18    ON 60/60   OFF 104/104   AutoReject dropped 0
+hx_19    excluded: 8 ON and 19 OFF trials after AutoReject
+hx_20    ON 87/95   OFF 84/89   AutoReject dropped 13
+hx_21    ON 50/50   OFF 40/40   AutoReject dropped 0
+hx_22    ON 78/78   OFF 95/95   AutoReject dropped 2
+hx_23    ON 94/94   OFF 90/90   AutoReject dropped 1
+hx_24    ON 50/50   OFF 77/77   AutoReject dropped 2
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 51/51   OFF 100/100   AutoReject dropped 0
+hx_27    ON 33/33   OFF 56/56   AutoReject dropped 2
+hx_28    ON 47/47   OFF 50/50   AutoReject dropped 0
+hx_29    ON 41/41   OFF 51/51   AutoReject dropped 1
+hx_30    excluded: 23 ON and 29 OFF trials after AutoReject
+hx_31    ON 93/93   OFF 85/86   AutoReject dropped 4
+hx_32    ON 90/90   OFF 75/75   AutoReject dropped 2
+hx_33    excluded: ValueError: No matching events found for ON (event id 2)
+hx_34    excluded: 34 ON and 13 OFF trials after AutoReject
+hx_35    ON 99/99   OFF 79/79   AutoReject dropped 1
+hx_36    ON 83/83   OFF 84/84   AutoReject dropped 2
+hx_37    excluded: 40 ON and 28 OFF trials after AutoReject
+hx_38    ON 98/98   OFF 88/88   AutoReject dropped 1
+hx_39    excluded: ValueError: No matching events found for ON (event id 2)
+hx_40    excluded: 50 ON and 23 OFF trials after AutoReject
+hx_41    ON 78/78   OFF 84/84   AutoReject dropped 0
+hx_42    excluded: ValueError: No matching events found for OFF (event id 1)
+32 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_2/h2_erd.csv

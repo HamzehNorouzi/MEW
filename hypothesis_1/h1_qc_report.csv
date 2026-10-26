@@ -1,0 +1,29 @@
+id,session,condition,n_blocks_used,block_durations_s,n_epochs_total,n_dropped_autoreject,n_retained_autoreject
+px_01,pre_task_rest,ON,1,225.1,22,0,22
+px_01,pre_task_rest,OFF,2,62.5; 67.4,12,0,12
+px_01,post_task_rest,ON,1,149.8,14,0,14
+px_01,post_task_rest,OFF,2,66.9; 63.7,12,0,12
+px_03,pre_task_rest,ON,2,62.6; 62.8,12,0,12
+px_03,pre_task_rest,OFF,3,61.0; 64.9; 63.9,18,0,18
+px_03,post_task_rest,ON,2,61.4; 66.2,12,0,12
+px_03,post_task_rest,OFF,2,69.5; 73.3,13,0,13
+px_04,pre_task_rest,ON,2,65.7; 62.6,12,0,12
+px_04,pre_task_rest,OFF,2,60.3; 74.3,13,0,13
+px_04,post_task_rest,ON,2,61.0; 61.1,12,0,12
+px_04,post_task_rest,OFF,2,60.9; 66.5,12,0,12
+px_05,pre_task_rest,ON,2,63.6; 65.9,12,0,12
+px_05,pre_task_rest,OFF,2,65.1; 70.3,13,0,13
+px_05,post_task_rest,ON,1,60.2,6,0,6
+px_05,post_task_rest,OFF,2,61.6; 70.6,13,0,13
+px_09,pre_task_rest,ON,2,73.2; 62.3,13,0,13
+px_09,pre_task_rest,OFF,2,61.5; 63.3,12,0,12
+px_09,post_task_rest,ON,2,66.1; 61.2,12,0,12
+px_09,post_task_rest,OFF,2,62.6; 62.6,12,0,12
+px_10,pre_task_rest,ON,2,71.5; 66.0,13,0,13
+px_10,pre_task_rest,OFF,2,63.1; 65.1,12,0,12
+px_10,post_task_rest,ON,2,67.1; 63.0,12,0,12
+px_10,post_task_rest,OFF,2,61.6; 63.4,12,0,12
+px_11,pre_task_rest,ON,2,62.1; 62.1,12,0,12
+px_11,pre_task_rest,OFF,2,61.6; 63.0,12,0,12
+px_11,post_task_rest,ON,2,62.0; 64.3,12,0,12
+px_11,post_task_rest,OFF,1,62.6,6,0,6

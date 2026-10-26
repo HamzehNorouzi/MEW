@@ -1,0 +1,208 @@
+hx_01    ON 75/94   OFF 88/100   interrupted 5 (5 short, 0 long)   segments 447/448 clean
+hx_02    excluded: 70 ON and 28 OFF gait epochs after AutoReject
+hx_03    ON 99/99   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 573/577 clean
+hx_04    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 769/770 clean
+hx_05    ON 98/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 483/488 clean
+hx_06    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 414/414 clean
+hx_07    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 402/403 clean
+hx_08    ON 101/101   OFF 98/98   interrupted 1 (1 short, 0 long)   segments 639/639 clean
+hx_09    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 558/558 clean
+hx_10    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 460/460 clean
+hx_11    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_12    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 633/633 clean
+hx_13    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 712/712 clean
+hx_14    ON 99/100   OFF 97/100   interrupted 0 (0 short, 0 long)   segments 617/636 clean
+hx_15    ON 88/98   OFF 96/97   interrupted 0 (0 short, 0 long)   segments 396/411 clean
+hx_16    ON 37/99   OFF 86/92   interrupted 1 (1 short, 0 long)   segments 315/321 clean   specparam failed on 1
+hx_17    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 409/409 clean
+hx_18    ON 66/66   OFF 97/106   interrupted 0 (0 short, 0 long)   segments 454/454 clean   specparam failed on 1
+hx_19    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 437/437 clean
+hx_20    ON 97/97   OFF 99/99   interrupted 4 (0 short, 4 long)   segments 441/441 clean
+hx_21    ON 50/50   OFF 49/50   interrupted 0 (0 short, 0 long)   segments 271/275 clean
+hx_22    ON 62/88   OFF 56/100   interrupted 0 (0 short, 0 long)   segments 318/501 clean
+hx_23    ON 99/99   OFF 98/100   interrupted 1 (1 short, 0 long)   segments 426/432 clean
+hx_24    ON 100/100   OFF 86/100   interrupted 0 (0 short, 0 long)   segments 534/535 clean
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 33/60   OFF 73/100   interrupted 0 (0 short, 0 long)   segments 281/282 clean
+hx_27    ON 96/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 395/395 clean
+hx_28    ON 49/50   OFF 50/50   interrupted 0 (0 short, 0 long)   segments 296/297 clean   specparam failed on 1
+hx_29    ON 99/100   OFF 80/80   interrupted 0 (0 short, 0 long)   segments 495/495 clean
+AVERAGING = 'mean' -- outputs tagged '_mean'
+4596 gait epochs -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_epoch_level_mean.csv
+Now run h4_group.py to apply the z > 2.0 fit screen.
+hx_01    ON 75/94   OFF 88/100   interrupted 5 (5 short, 0 long)   segments 447/448 clean
+hx_02    excluded: 70 ON and 28 OFF gait epochs after AutoReject
+hx_03    ON 99/99   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 573/577 clean
+hx_04    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 769/770 clean
+hx_05    ON 98/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 483/488 clean
+hx_06    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 414/414 clean
+hx_07    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 402/403 clean
+hx_08    ON 101/101   OFF 98/98   interrupted 1 (1 short, 0 long)   segments 639/639 clean
+hx_09    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 558/558 clean
+hx_10    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 460/460 clean
+hx_11    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_12    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 633/633 clean
+hx_13    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 712/712 clean
+hx_14    ON 99/100   OFF 97/100   interrupted 0 (0 short, 0 long)   segments 617/636 clean
+hx_15    ON 88/98   OFF 96/97   interrupted 0 (0 short, 0 long)   segments 396/411 clean
+hx_16    ON 37/99   OFF 86/92   interrupted 1 (1 short, 0 long)   segments 315/321 clean   specparam failed on 1
+hx_17    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 409/409 clean
+hx_18    ON 66/66   OFF 97/106   interrupted 0 (0 short, 0 long)   segments 454/454 clean   specparam failed on 1
+hx_19    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 437/437 clean
+hx_20    ON 97/97   OFF 99/99   interrupted 4 (0 short, 4 long)   segments 441/441 clean
+hx_21    ON 50/50   OFF 49/50   interrupted 0 (0 short, 0 long)   segments 271/275 clean
+hx_22    ON 62/88   OFF 56/100   interrupted 0 (0 short, 0 long)   segments 318/501 clean
+hx_23    ON 99/99   OFF 98/100   interrupted 1 (1 short, 0 long)   segments 426/432 clean
+hx_24    ON 100/100   OFF 86/100   interrupted 0 (0 short, 0 long)   segments 534/535 clean
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 33/60   OFF 73/100   interrupted 0 (0 short, 0 long)   segments 281/282 clean
+hx_27    ON 96/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 395/395 clean
+hx_28    ON 50/50   OFF 50/50   interrupted 0 (0 short, 0 long)   segments 296/297 clean
+hx_29    ON 99/100   OFF 80/80   interrupted 0 (0 short, 0 long)   segments 495/495 clean
+hx_30    ON 87/96   OFF 44/44   interrupted 2 (1 short, 1 long)   segments 268/279 clean
+hx_31    ON 100/100   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 400/400 clean
+hx_32    ON 94/94   OFF 85/90   interrupted 0 (0 short, 0 long)   segments 370/375 clean
+hx_33    ON 94/94   OFF 104/104   interrupted 0 (0 short, 0 long)   segments 780/792 clean
+hx_34    ON 87/88   OFF 65/100   interrupted 0 (0 short, 0 long)   segments 348/401 clean
+hx_35    excluded: ValueError: No matching events found for ON (event id 2)
+hx_36    ON 99/99   OFF 86/86   interrupted 1 (0 short, 1 long)   segments 468/468 clean
+hx_37    ON 68/68   OFF 92/92   interrupted 0 (0 short, 0 long)   segments 474/474 clean
+hx_38    ON 99/100   OFF 86/90   interrupted 0 (0 short, 0 long)   segments 418/426 clean
+hx_39    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 619/619 clean
+AVERAGING = 'mean' -- outputs tagged '_mean'
+6185 gait epochs -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_epoch_level_mean.csv
+Now run h4_group.py to apply the z > 2.0 fit screen.
+hx_01    ON 75/94   OFF 88/100   interrupted 5 (5 short, 0 long)   segments 447/448 clean
+hx_02    excluded: 70 ON and 28 OFF gait epochs after AutoReject
+hx_03    ON 99/99   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 573/577 clean
+hx_04    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 769/770 clean
+hx_05    ON 98/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 483/488 clean
+hx_06    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 414/414 clean
+hx_07    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 402/403 clean
+hx_08    ON 101/101   OFF 98/98   interrupted 1 (1 short, 0 long)   segments 639/639 clean
+hx_09    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 558/558 clean
+hx_10    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 460/460 clean
+hx_11    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_12    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 633/633 clean
+hx_13    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 712/712 clean
+hx_14    ON 99/100   OFF 97/100   interrupted 0 (0 short, 0 long)   segments 617/636 clean
+hx_15    ON 88/98   OFF 96/97   interrupted 0 (0 short, 0 long)   segments 396/411 clean
+hx_16    ON 37/99   OFF 86/92   interrupted 1 (1 short, 0 long)   segments 315/321 clean   specparam failed on 1
+hx_17    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 409/409 clean
+hx_18    ON 66/66   OFF 97/106   interrupted 0 (0 short, 0 long)   segments 454/454 clean   specparam failed on 1
+hx_19    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 437/437 clean
+hx_20    ON 97/97   OFF 99/99   interrupted 4 (0 short, 4 long)   segments 441/441 clean
+hx_21    ON 50/50   OFF 49/50   interrupted 0 (0 short, 0 long)   segments 271/275 clean
+hx_22    ON 62/88   OFF 56/100   interrupted 0 (0 short, 0 long)   segments 318/501 clean
+hx_23    ON 99/99   OFF 98/100   interrupted 1 (1 short, 0 long)   segments 426/432 clean
+hx_24    ON 100/100   OFF 86/100   interrupted 0 (0 short, 0 long)   segments 534/535 clean
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 33/60   OFF 73/100   interrupted 0 (0 short, 0 long)   segments 281/282 clean
+hx_27    ON 96/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 395/395 clean
+hx_28    ON 49/50   OFF 50/50   interrupted 0 (0 short, 0 long)   segments 296/297 clean   specparam failed on 1
+hx_29    ON 99/100   OFF 80/80   interrupted 0 (0 short, 0 long)   segments 495/495 clean
+hx_30    ON 83/96   OFF 40/44   interrupted 2 (1 short, 1 long)   segments 259/279 clean
+hx_31    ON 100/100   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 400/400 clean
+hx_32    ON 94/94   OFF 89/90   interrupted 0 (0 short, 0 long)   segments 374/375 clean
+hx_33    ON 94/94   OFF 104/104   interrupted 0 (0 short, 0 long)   segments 792/792 clean
+hx_34    ON 88/88   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 401/401 clean
+hx_35    excluded: ValueError: No matching events found for ON (event id 2)
+hx_36    ON 95/99   OFF 86/86   interrupted 1 (0 short, 1 long)   segments 468/468 clean   specparam failed on 4
+hx_37    excluded: ValueError: No matching events found for ON (event id 2)
+hx_38    ON 99/100   OFF 78/90   interrupted 0 (0 short, 0 long)   segments 408/426 clean
+hx_39    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 619/619 clean
+hx_40    ON 100/100   OFF 93/94   interrupted 0 (0 short, 0 long)   segments 388/389 clean
+hx_41    ON 75/84   OFF 69/84   interrupted 0 (0 short, 0 long)   segments 307/341 clean
+hx_42    ON 104/104   OFF 90/90   interrupted 0 (0 short, 0 long)   segments 432/432 clean
+AVERAGING = 'mean' -- outputs tagged '_mean'
+6575 gait epochs -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_epoch_level_mean.csv
+Now run h4_group.py to apply the z > 2.0 fit screen.
+hx_01    ON 75/94   OFF 88/100   interrupted 5 (5 short, 0 long)   segments 447/448 clean
+hx_02    excluded: 70 ON and 28 OFF gait epochs after AutoReject
+hx_03    ON 99/99   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 573/577 clean
+hx_04    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 769/770 clean
+hx_05    ON 98/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 483/488 clean
+hx_06    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 414/414 clean
+hx_07    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 402/403 clean
+hx_08    ON 101/101   OFF 98/98   interrupted 1 (1 short, 0 long)   segments 639/639 clean
+hx_09    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 558/558 clean
+hx_10    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 460/460 clean
+hx_11    ON 98/98   OFF 98/98   interrupted 0 (0 short, 0 long)   segments 395/395 clean
+hx_12    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 633/633 clean
+hx_13    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 712/712 clean
+hx_14    ON 99/100   OFF 97/100   interrupted 0 (0 short, 0 long)   segments 617/636 clean
+hx_15    ON 88/98   OFF 96/97   interrupted 0 (0 short, 0 long)   segments 396/411 clean
+hx_16    ON 37/99   OFF 86/92   interrupted 1 (1 short, 0 long)   segments 315/321 clean   specparam failed on 1
+hx_17    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 409/409 clean
+hx_18    ON 66/66   OFF 97/106   interrupted 0 (0 short, 0 long)   segments 454/454 clean   specparam failed on 1
+hx_19    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 437/437 clean
+hx_20    ON 97/97   OFF 99/99   interrupted 4 (0 short, 4 long)   segments 441/441 clean
+hx_21    ON 50/50   OFF 49/50   interrupted 0 (0 short, 0 long)   segments 271/275 clean
+hx_22    ON 62/88   OFF 56/100   interrupted 0 (0 short, 0 long)   segments 318/501 clean
+hx_23    ON 99/99   OFF 98/100   interrupted 1 (1 short, 0 long)   segments 426/432 clean
+hx_24    ON 100/100   OFF 86/100   interrupted 0 (0 short, 0 long)   segments 534/535 clean
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 33/60   OFF 73/100   interrupted 0 (0 short, 0 long)   segments 281/282 clean
+hx_27    ON 96/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 395/395 clean
+hx_28    ON 49/50   OFF 50/50   interrupted 0 (0 short, 0 long)   segments 296/297 clean   specparam failed on 1
+hx_29    ON 99/100   OFF 80/80   interrupted 0 (0 short, 0 long)   segments 495/495 clean
+hx_30    ON 83/96   OFF 40/44   interrupted 2 (1 short, 1 long)   segments 259/279 clean
+hx_31    ON 100/100   OFF 98/100   interrupted 0 (0 short, 0 long)   segments 400/400 clean
+hx_32    ON 94/94   OFF 89/90   interrupted 0 (0 short, 0 long)   segments 374/375 clean
+hx_33    ON 94/94   OFF 104/104   interrupted 0 (0 short, 0 long)   segments 792/792 clean
+hx_34    ON 88/88   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 401/401 clean
+hx_35    ON 99/99   OFF 80/80   interrupted 0 (0 short, 0 long)   segments 511/511 clean
+hx_36    ON 95/99   OFF 86/86   interrupted 1 (0 short, 1 long)   segments 468/468 clean   specparam failed on 4
+hx_37    ON 68/68   OFF 92/92   interrupted 0 (0 short, 0 long)   segments 474/474 clean
+hx_38    ON 99/100   OFF 78/90   interrupted 0 (0 short, 0 long)   segments 408/426 clean
+hx_39    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 619/619 clean
+hx_40    ON 100/100   OFF 93/94   interrupted 0 (0 short, 0 long)   segments 388/389 clean
+hx_41    ON 75/84   OFF 69/84   interrupted 0 (0 short, 0 long)   segments 307/341 clean
+hx_42    ON 104/104   OFF 90/90   interrupted 0 (0 short, 0 long)   segments 432/432 clean
+AVERAGING = 'mean' -- outputs tagged '_mean'
+7110 gait epochs -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_epoch_level_mean.csv
+Now run h4_group.py to apply the z > 2.0 fit screen.
+hx_01    ON 74/76   OFF 88/88   interrupted 35 (35 short, 0 long)   segments 414/418 clean
+hx_02    excluded: 67 ON and 22 OFF gait epochs after AutoReject
+hx_03    ON 99/99   OFF 99/99   interrupted 1 (1 short, 0 long)   segments 576/576 clean
+hx_04    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 769/770 clean
+hx_05    ON 98/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 483/488 clean
+hx_06    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 414/414 clean
+hx_07    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 402/403 clean
+hx_08    ON 101/101   OFF 98/98   interrupted 1 (1 short, 0 long)   segments 639/639 clean
+hx_09    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 558/558 clean
+hx_10    ON 100/100   OFF 99/100   interrupted 0 (0 short, 0 long)   segments 460/460 clean
+hx_11    ON 98/98   OFF 98/98   interrupted 0 (0 short, 0 long)   segments 395/395 clean
+hx_12    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 633/633 clean
+hx_13    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 712/712 clean
+hx_14    ON 99/100   OFF 97/100   interrupted 0 (0 short, 0 long)   segments 617/636 clean
+hx_15    ON 88/98   OFF 96/97   interrupted 0 (0 short, 0 long)   segments 396/411 clean
+hx_16    ON 37/37   OFF 90/92   interrupted 63 (63 short, 0 long)   segments 256/260 clean
+hx_17    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 409/409 clean
+hx_18    ON 61/66   OFF 92/97   interrupted 9 (9 short, 0 long)   segments 417/446 clean
+hx_19    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 437/437 clean
+hx_20    ON 97/97   OFF 99/99   interrupted 4 (0 short, 4 long)   segments 441/441 clean
+hx_21    ON 50/50   OFF 49/50   interrupted 0 (0 short, 0 long)   segments 271/275 clean
+hx_22    ON 62/88   OFF 56/100   interrupted 0 (0 short, 0 long)   segments 318/501 clean
+hx_23    ON 99/99   OFF 98/100   interrupted 1 (1 short, 0 long)   segments 426/432 clean
+hx_24    ON 100/100   OFF 86/86   interrupted 14 (14 short, 0 long)   segments 521/521 clean
+hx_25    excluded: ValueError: No matching events found for OFF (event id 1)
+hx_26    ON 34/34   OFF 73/73   interrupted 53 (53 short, 0 long)   segments 229/229 clean
+hx_27    ON 96/96   OFF 99/100   interrupted 4 (4 short, 0 long)   segments 391/391 clean
+hx_28    ON 50/50   OFF 50/50   interrupted 0 (0 short, 0 long)   segments 296/297 clean
+hx_29    ON 99/99   OFF 80/80   interrupted 1 (1 short, 0 long)   segments 494/494 clean
+hx_30    ON 90/95   OFF 43/44   interrupted 3 (2 short, 1 long)   segments 270/278 clean
+hx_31    ON 100/100   OFF 98/98   interrupted 2 (2 short, 0 long)   segments 398/398 clean
+hx_32    ON 94/94   OFF 89/90   interrupted 0 (0 short, 0 long)   segments 374/375 clean
+hx_33    ON 94/94   OFF 104/104   interrupted 0 (0 short, 0 long)   segments 792/792 clean
+hx_34    ON 88/88   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 401/401 clean
+hx_35    ON 99/99   OFF 80/80   interrupted 0 (0 short, 0 long)   segments 511/511 clean
+hx_36    ON 99/99   OFF 86/86   interrupted 1 (0 short, 1 long)   segments 468/468 clean
+hx_37    ON 68/68   OFF 92/92   interrupted 0 (0 short, 0 long)   segments 474/474 clean
+hx_38    ON 99/100   OFF 78/90   interrupted 0 (0 short, 0 long)   segments 408/426 clean
+hx_39    ON 100/100   OFF 100/100   interrupted 0 (0 short, 0 long)   segments 619/619 clean
+hx_40    ON 100/100   OFF 93/94   interrupted 0 (0 short, 0 long)   segments 388/389 clean
+hx_41    ON 75/84   OFF 69/84   interrupted 0 (0 short, 0 long)   segments 307/341 clean
+hx_42    ON 104/104   OFF 90/90   interrupted 0 (0 short, 0 long)   segments 432/432 clean
+7120 gait epochs -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_epoch_level.csv
+Now run h4_group.py to apply the z > 2.0 fit screen.

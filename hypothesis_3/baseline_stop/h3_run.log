@@ -1,0 +1,26 @@
+hx_01    ON 64/64   OFF 78/78   AutoReject dropped 3
+hx_02    ON 74/74   OFF 68/68   AutoReject dropped 1
+hx_03    ON 53/53   OFF 55/55   AutoReject dropped 0
+hx_04    ON 99/99   OFF 96/96   AutoReject dropped 3
+hx_05    ON 100/100   OFF 57/57   AutoReject dropped 3
+hx_06    ON 99/99   OFF 100/100   AutoReject dropped 1
+hx_07    ON 95/95   OFF 100/100   AutoReject dropped 4
+hx_08    ON 84/84   OFF 81/81   AutoReject dropped 7
+hx_09    ON 89/89   OFF 91/91   AutoReject dropped 2
+hx_10    ON 79/79   OFF 96/96   AutoReject dropped 3
+hx_11    ON 70/70   OFF 90/90   AutoReject dropped 6
+hx_12    ON 73/73   OFF 81/81   AutoReject dropped 2
+hx_13    excluded: 15 ON and 13 OFF trials after AutoReject
+hx_14    ON 91/91   OFF 98/98   AutoReject dropped 4
+hx_15    ON 94/94   OFF 86/86   AutoReject dropped 4
+hx_16    ON 81/95   OFF 83/88   AutoReject dropped 22
+hx_17    ON 96/97   OFF 83/84   AutoReject dropped 4
+hx_18    ON 59/59   OFF 100/101   AutoReject dropped 4
+hx_19    excluded: 8 ON and 17 OFF trials after AutoReject
+hx_20    ON 94/94   OFF 86/86   AutoReject dropped 4
+hx_21    ON 49/49   OFF 39/39   AutoReject dropped 2
+hx_22    ON 74/76   OFF 86/92   AutoReject dropped 15
+hx_23    ON 88/92   OFF 87/89   AutoReject dropped 10
+hx_24    ON 50/50   OFF 74/74   AutoReject dropped 5
+Non-default settings (AVERAGING='mean', BASELINE_MODE='stop') -- outputs tagged '_mean_baseline-stop'
+22 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_3/h3_ers_mean_baseline-stop.csv

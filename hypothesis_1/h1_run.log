@@ -1,0 +1,719 @@
+2026-10-21 16:50:05  INFO     ======================================================================
+2026-10-21 16:50:05  INFO     H1 extraction started (n_jobs = -1)
+2026-10-21 16:50:05  INFO     Cohort: px_XX folders
+2026-10-21 16:50:05  INFO     PROTOCOL DEVIATION (logged deliberately): section 3.5 assumes 100 s blocks and 10 epochs per condition, and excludes a participant if more than 5 epochs are removed. The recorded blocks are ~60 s, so the rule is applied as 'more than 50% of epochs in any condition'.
+2026-10-21 16:50:05  INFO     ======================================================================
+2026-10-21 16:50:05  INFO     Found 11 px_XX participant folders
+2026-10-21 16:50:05  INFO     Contralaterality CSV columns: 'Id', 'Start time', 'Completion time', 'Participant ID', 'Sex', 'Age?', 'Side of stimulator', 'Pre-task, resting-state, block 1', 'Did you feel the stimulation?', 'How strong was the sensation? ', 'Pre-task, resting-state, block 2', 'Did you feel the stimulation?1', 'How strong was the sensation? 1', 'Pre-task, resting-state, block 3', 'Did you feel the stimulation?2', 'How strong was the sensation? 2', 'Pre-task, resting-state, block 4', 'Did you feel the stimulation?3', 'How strong was the sensation? 3', 'Task, Block 1', 'Did you feel the stimulation?4', 'How strong was the sensation? 4', 'Task, Block 2', 'Did you feel the stimulation?5', 'How strong was the sensation? 5', 'Post-task, resting-state, Block 1', 'Did you feel the stimulation?6', 'How strong was the sensation? 6', 'Post-task, resting-state, Block 2', 'Did you feel the stimulation?7', 'How strong was the sensation? 7', 'Post-task, resting-state, Block 3', 'Did you feel the stimulation?8', 'How strong was the sensation? 8', 'Post-task, resting-state, Block 4', 'Did you feel the stimulation?9', 'How strong was the sensation? 9'
+2026-10-21 16:50:05  INFO     Using 'Participant ID' as the participant id and 'Side of stimulator' as the stimulator side
+2026-10-21 16:50:05  INFO     CSV id 'px_0-6' matched to folder 'px_06'
+2026-10-21 16:50:05  WARNING  42 CSV id(s) do not match any participant folder: 'hx_01', 'hx_02', 'hx_03', 'hx_04', 'hx_05', 'hx_06', 'hx_07', 'hx_08', 'hx_09', 'hx_10', 'hx_11', 'hx_12', 'hx_13', 'hx_14', 'hx_15', 'hx_16', 'hx_17', 'hx_18', 'hx_19', 'hx_20'
+2026-10-21 16:50:05  INFO     Loaded stimulator side for 53 participants from /home/hamzeh/Documents/MEAOW_project/hypothesis_1/participants_info.csv
+2026-10-21 16:50:05  INFO         hx_01    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_02    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_03    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_04    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_05    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_06    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_07    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_08    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_09    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_10    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_01    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_02    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_03    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         px_04    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         px_05    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_06    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_11    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_12    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_13    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_14    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_15    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_16    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_17    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_18    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_19    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_20    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_07    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_21    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_22    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_23    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_24    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_25    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_26    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_08    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_09    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_27    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         px_10    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_28    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_29    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_30    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         px_11    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_31    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_32    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_33    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_34    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_35    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_36    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_37    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_38    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_39    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_40    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO         hx_41    -> stimulator Right -> target ROI left
+2026-10-21 16:50:05  INFO         hx_42    -> stimulator Left -> target ROI right
+2026-10-21 16:50:05  INFO     Loaded stage 0 manifest: 33 rows covering 11 subjects
+2026-10-21 16:50:05  INFO     Read ICLabel counts for 30 recordings from /home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/stage0_run.log
+2026-10-21 16:50:05  INFO     Block columns for pre_task_rest: 'Pre-task, resting-state, block 1', 'Pre-task, resting-state, block 2', 'Pre-task, resting-state, block 3', 'Pre-task, resting-state, block 4'
+2026-10-21 16:50:05  INFO     Block columns for post_task_rest: 'Post-task, resting-state, Block 1', 'Post-task, resting-state, Block 2', 'Post-task, resting-state, Block 3', 'Post-task, resting-state, Block 4'
+2026-10-21 16:50:05  WARNING  px_01 / pre_task_rest: unrecognised condition value 'na' in column 'Pre-task, resting-state, block 1'. Expected one of ['sham', 'stim', 'stimulation'].
+2026-10-21 16:50:05  WARNING  px_01 / post_task_rest: unrecognised condition value 'na' in column 'Post-task, resting-state, Block 1'. Expected one of ['sham', 'stim', 'stimulation'].
+2026-10-21 16:50:05  INFO     Loaded expected block order for 104 participant-sessions from /home/hamzeh/Documents/MEAOW_project/hypothesis_1/participants_info.csv
+2026-10-21 16:50:05  INFO     ----------------------------------------------------------------------
+2026-10-21 16:50:05  INFO     Processing px_01
+2026-10-21 16:50:05  INFO     px_01: stimulator on Right hand -> target ROI is left
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: 28 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: ICLabel -> brain 32, channel noise 1, eye blink 2, line noise 2, muscle artifact 6, other 17  (brain = 32)
+2026-10-21 16:50:05  INFO     px_01 / post_task_rest: 20 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:50:05  INFO     px_01 / post_task_rest: ICLabel -> brain 40, channel noise 1, eye blink 2, line noise 2, muscle artifact 1, other 14  (brain = 40)
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: loaded, 327.3 s of data, 61 channels
+2026-10-21 16:50:05  WARNING  px_01 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: 3 annotations found for code 1004 (first_time = 166.100 s, data ends at 327.260 s, markers span 100.264 s to 326.260 s after correction)
+2026-10-21 16:50:05  WARNING  px_01 / pre_task_rest: code 1004, pair at 100.26 s to 101.20 s REJECTED, only 0.94 s (minimum is 60.0 s)
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: code 1004, block 1 ACCEPTED, 225.06 s (101.20 s to 326.26 s, text 'Stimulus/s1004')
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: code 1004, 1 block(s) accepted, 1 pair(s) rejected
+2026-10-21 16:50:05  WARNING  px_01 / pre_task_rest: code 1004, expected 2 blocks but accepted 1. Check the marker stream for this recording.
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: stage 0 counted 3 annotations with code 1004; this script accepted 1 block(s)
+2026-10-21 16:50:05  WARNING  px_01 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: 4 annotations found for code 1002 (first_time = 166.100 s, data ends at 327.260 s, markers span 1.000 s to 245.980 s after correction)
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: code 1002, block 1 ACCEPTED, 62.47 s (1.00 s to 63.47 s, text 'Stimulus/s1002')
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: code 1002, block 2 ACCEPTED, 67.38 s (178.60 s to 245.98 s, text 'Stimulus/s1002')
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:50:05  WARNING  px_01 / pre_task_rest: no expected block order for this session, so the blocks are NOT validated.
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: block 1 (ON) is 225.06 s -> cropped to 220 s (22 epochs), 5.06 s of remainder dropped
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: block 1 (ON) -> 22 epochs
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: block 1 (OFF) is 62.47 s -> cropped to 60 s (6 epochs), 2.47 s of remainder dropped
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: block 2 (OFF) is 67.38 s -> cropped to 60 s (6 epochs), 7.38 s of remainder dropped
+2026-10-21 16:50:05  INFO     px_01 / pre_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:52:08  INFO     ======================================================================
+2026-10-21 16:52:08  INFO     H1 extraction started (n_jobs = -1)
+2026-10-21 16:52:08  INFO     Cohort: px_XX folders
+2026-10-21 16:52:08  INFO     PROTOCOL DEVIATION (logged deliberately): section 3.5 assumes 100 s blocks and 10 epochs per condition, and excludes a participant if more than 5 epochs are removed. The recorded blocks are ~60 s, so the rule is applied as 'more than 50% of epochs in any condition'.
+2026-10-21 16:52:08  INFO     ======================================================================
+2026-10-21 16:52:08  INFO     Found 11 px_XX participant folders
+2026-10-21 16:52:08  INFO     Contralaterality CSV columns: 'Id', 'Start time', 'Completion time', 'Participant ID', 'Sex', 'Age?', 'Side of stimulator', 'Pre-task, resting-state, block 1', 'Did you feel the stimulation?', 'How strong was the sensation? ', 'Pre-task, resting-state, block 2', 'Did you feel the stimulation?1', 'How strong was the sensation? 1', 'Pre-task, resting-state, block 3', 'Did you feel the stimulation?2', 'How strong was the sensation? 2', 'Pre-task, resting-state, block 4', 'Did you feel the stimulation?3', 'How strong was the sensation? 3', 'Task, Block 1', 'Did you feel the stimulation?4', 'How strong was the sensation? 4', 'Task, Block 2', 'Did you feel the stimulation?5', 'How strong was the sensation? 5', 'Post-task, resting-state, Block 1', 'Did you feel the stimulation?6', 'How strong was the sensation? 6', 'Post-task, resting-state, Block 2', 'Did you feel the stimulation?7', 'How strong was the sensation? 7', 'Post-task, resting-state, Block 3', 'Did you feel the stimulation?8', 'How strong was the sensation? 8', 'Post-task, resting-state, Block 4', 'Did you feel the stimulation?9', 'How strong was the sensation? 9'
+2026-10-21 16:52:08  INFO     Using 'Participant ID' as the participant id and 'Side of stimulator' as the stimulator side
+2026-10-21 16:52:08  INFO     CSV id 'px_0-6' matched to folder 'px_06'
+2026-10-21 16:52:08  WARNING  42 CSV id(s) do not match any participant folder: 'hx_01', 'hx_02', 'hx_03', 'hx_04', 'hx_05', 'hx_06', 'hx_07', 'hx_08', 'hx_09', 'hx_10', 'hx_11', 'hx_12', 'hx_13', 'hx_14', 'hx_15', 'hx_16', 'hx_17', 'hx_18', 'hx_19', 'hx_20'
+2026-10-21 16:52:08  INFO     Loaded stimulator side for 53 participants from /home/hamzeh/Documents/MEAOW_project/hypothesis_1/participants_info.csv
+2026-10-21 16:52:08  INFO         hx_01    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_02    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_03    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_04    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_05    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_06    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_07    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_08    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_09    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_10    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_01    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_02    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_03    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         px_04    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         px_05    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_06    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_11    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_12    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_13    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_14    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_15    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_16    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_17    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_18    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_19    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_20    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_07    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_21    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_22    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_23    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_24    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_25    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_26    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_08    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_09    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_27    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         px_10    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_28    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_29    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_30    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         px_11    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_31    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_32    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_33    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_34    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_35    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_36    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_37    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_38    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_39    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_40    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO         hx_41    -> stimulator Right -> target ROI left
+2026-10-21 16:52:08  INFO         hx_42    -> stimulator Left -> target ROI right
+2026-10-21 16:52:08  INFO     Loaded stage 0 manifest: 33 rows covering 11 subjects
+2026-10-21 16:52:08  INFO     Read ICLabel counts for 30 recordings from /home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/stage0_run.log
+2026-10-21 16:52:08  INFO     Block columns for pre_task_rest: 'Pre-task, resting-state, block 1', 'Pre-task, resting-state, block 2', 'Pre-task, resting-state, block 3', 'Pre-task, resting-state, block 4'
+2026-10-21 16:52:08  INFO     Block columns for post_task_rest: 'Post-task, resting-state, Block 1', 'Post-task, resting-state, Block 2', 'Post-task, resting-state, Block 3', 'Post-task, resting-state, Block 4'
+2026-10-21 16:52:08  WARNING  px_01 / pre_task_rest: unrecognised condition value 'na' in column 'Pre-task, resting-state, block 1'. Expected one of ['sham', 'stim', 'stimulation'].
+2026-10-21 16:52:08  WARNING  px_01 / post_task_rest: unrecognised condition value 'na' in column 'Post-task, resting-state, Block 1'. Expected one of ['sham', 'stim', 'stimulation'].
+2026-10-21 16:52:08  INFO     Loaded expected block order for 104 participant-sessions from /home/hamzeh/Documents/MEAOW_project/hypothesis_1/participants_info.csv
+2026-10-21 16:52:08  INFO     ----------------------------------------------------------------------
+2026-10-21 16:52:08  INFO     Processing px_01
+2026-10-21 16:52:08  INFO     px_01: stimulator on Right hand -> target ROI is left
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: 28 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: ICLabel -> brain 32, channel noise 1, eye blink 2, line noise 2, muscle artifact 6, other 17  (brain = 32)
+2026-10-21 16:52:08  INFO     px_01 / post_task_rest: 20 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:52:08  INFO     px_01 / post_task_rest: ICLabel -> brain 40, channel noise 1, eye blink 2, line noise 2, muscle artifact 1, other 14  (brain = 40)
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: loaded, 327.3 s of data, 61 channels
+2026-10-21 16:52:08  WARNING  px_01 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: 3 annotations found for code 1004 (first_time = 166.100 s, data ends at 327.260 s, markers span 100.264 s to 326.260 s after correction)
+2026-10-21 16:52:08  WARNING  px_01 / pre_task_rest: code 1004, pair at 100.26 s to 101.20 s REJECTED, only 0.94 s (minimum is 60.0 s)
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: code 1004, block 1 ACCEPTED, 225.06 s (101.20 s to 326.26 s, text 'Stimulus/s1004')
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: code 1004, 1 block(s) accepted, 1 pair(s) rejected
+2026-10-21 16:52:08  WARNING  px_01 / pre_task_rest: code 1004, expected 2 blocks but accepted 1. Check the marker stream for this recording.
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: stage 0 counted 3 annotations with code 1004; this script accepted 1 block(s)
+2026-10-21 16:52:08  WARNING  px_01 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: 4 annotations found for code 1002 (first_time = 166.100 s, data ends at 327.260 s, markers span 1.000 s to 245.980 s after correction)
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: code 1002, block 1 ACCEPTED, 62.47 s (1.00 s to 63.47 s, text 'Stimulus/s1002')
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: code 1002, block 2 ACCEPTED, 67.38 s (178.60 s to 245.98 s, text 'Stimulus/s1002')
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:52:08  WARNING  px_01 / pre_task_rest: no expected block order for this session, so the blocks are NOT validated.
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: block 1 (ON) is 225.06 s -> cropped to 220 s (22 epochs), 5.06 s of remainder dropped
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: block 1 (ON) -> 22 epochs
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: block 1 (OFF) is 62.47 s -> cropped to 60 s (6 epochs), 2.47 s of remainder dropped
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: block 2 (OFF) is 67.38 s -> cropped to 60 s (6 epochs), 7.38 s of remainder dropped
+2026-10-21 16:52:08  INFO     px_01 / pre_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:52:37  INFO     px_01 / pre_task_rest: AutoReject kept 34 of 34 epochs
+2026-10-21 16:52:37  INFO     px_01 / pre_task_rest / ON: 22 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:52:37  INFO     px_01 / pre_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: loaded, 291.5 s of data, 61 channels
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: 5 annotations found for code 1004 (first_time = 28.428 s, data ends at 291.540 s, markers span 1.000 s to 222.212 s after correction)
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: code 1004, pair at 1.00 s to 2.29 s REJECTED, only 1.29 s (minimum is 60.0 s)
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: code 1004, pair at 2.29 s to 5.82 s REJECTED, only 3.53 s (minimum is 60.0 s)
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: code 1004, block 1 ACCEPTED, 149.79 s (5.82 s to 155.61 s, text 'Stimulus/s1004')
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: code 1004, the marker at 222.21 s has no partner after it and is unused
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: code 1004, 1 block(s) accepted, 2 pair(s) rejected
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: code 1004, expected 2 blocks but accepted 1. Check the marker stream for this recording.
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: stage 0 counted 5 annotations with code 1004; this script accepted 1 block(s)
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: 5 annotations found for code 1002 (first_time = 28.428 s, data ends at 291.540 s, markers span 74.220 s to 290.540 s after correction)
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: code 1002, pair at 74.22 s to 83.94 s REJECTED, only 9.72 s (minimum is 60.0 s)
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: code 1002, block 1 ACCEPTED, 66.92 s (83.94 s to 150.86 s, text 'Stimulus/s1002')
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: code 1002, block 2 ACCEPTED, 63.72 s (226.82 s to 290.54 s, text 'Stimulus/s1002')
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: code 1002, 2 block(s) accepted, 1 pair(s) rejected
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: stage 0 counted 5 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:52:37  WARNING  px_01 / post_task_rest: no expected block order for this session, so the blocks are NOT validated.
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: block 1 (ON) is 149.79 s -> cropped to 140 s (14 epochs), 9.79 s of remainder dropped
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: block 1 (ON) -> 14 epochs
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: block 1 (OFF) is 66.92 s -> cropped to 60 s (6 epochs), 6.92 s of remainder dropped
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: block 2 (OFF) is 63.72 s -> cropped to 60 s (6 epochs), 3.72 s of remainder dropped
+2026-10-21 16:52:37  INFO     px_01 / post_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:52:58  INFO     px_01 / post_task_rest: AutoReject kept 26 of 26 epochs
+2026-10-21 16:52:58  INFO     px_01 / post_task_rest / ON: 14 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:52:58  INFO     px_01 / post_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:53:01  INFO     px_01: extraction finished, 120 epoch-level rows (120 with a usable FOOOF fit); 60 spectra collected for the group figure so far
+2026-10-21 16:53:01  INFO     ----------------------------------------------------------------------
+2026-10-21 16:53:01  INFO     Processing px_02
+2026-10-21 16:53:01  INFO     px_02: stimulator on Right hand -> target ROI is left
+2026-10-21 16:53:01  INFO     px_02 / pre_task_rest: 27 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:53:01  INFO     px_02 / pre_task_rest: ICLabel -> brain 33, channel noise 4, eye blink 1, line noise 7, muscle artifact 7, other 8  (brain = 33)
+2026-10-21 16:53:01  INFO     px_02 / post_task_rest: 28 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:53:01  INFO     px_02 / post_task_rest: ICLabel -> brain 32, channel noise 3, eye blink 1, line noise 1, muscle artifact 1, other 22  (brain = 32)
+2026-10-21 16:53:01  INFO     px_02 / pre_task_rest: loaded, 613.5 s of data, 61 channels
+2026-10-21 16:53:01  ERROR    px_02 / pre_task_rest: condition ON matched nothing, by text ['Comment/timulus/s1004'] or by code 1004.
+2026-10-21 16:53:01  WARNING  px_02 / pre_task_rest: no annotations found for condition ON. The file contains these descriptions: 'Stimulus/s1002'
+2026-10-21 16:53:01  INFO     px_02 / pre_task_rest: stage 0 counted 0 annotations with code 1004; this script accepted 0 block(s)
+2026-10-21 16:53:01  WARNING  EXCLUDED px_02 -- no_valid_blocks (pre_task_rest, condition ON)
+2026-10-21 16:53:01  INFO     ----------------------------------------------------------------------
+2026-10-21 16:53:01  INFO     Processing px_03
+2026-10-21 16:53:01  INFO     px_03: stimulator on Left hand -> target ROI is right
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: 28 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: ICLabel -> brain 32, channel noise 4, eye blink 2, line noise 7, muscle artifact 1, other 14  (brain = 32)
+2026-10-21 16:53:01  INFO     px_03 / post_task_rest: 24 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:53:01  INFO     px_03 / post_task_rest: ICLabel -> brain 36, channel noise 3, eye blink 1, line noise 4, muscle artifact 1, other 15  (brain = 36)
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: loaded, 530.8 s of data, 61 channels
+2026-10-21 16:53:01  WARNING  px_03 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: 4 annotations found for code 1004 (first_time = 22.764 s, data ends at 530.760 s, markers span 138.432 s to 404.896 s after correction)
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1004, block 1 ACCEPTED, 62.64 s (138.43 s to 201.07 s, text 'Stimulus/s1004')
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1004, block 2 ACCEPTED, 62.84 s (342.05 s to 404.90 s, text 'Stimulus/s1004')
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:53:01  WARNING  px_03 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: 8 annotations found for code 1002 (first_time = 22.764 s, data ends at 530.760 s, markers span 1.000 s to 529.760 s after correction)
+2026-10-21 16:53:01  WARNING  px_03 / pre_task_rest: code 1002, pair at 1.00 s to 57.66 s REJECTED, only 56.66 s (minimum is 60.0 s)
+2026-10-21 16:53:01  WARNING  px_03 / pre_task_rest: code 1002, pair at 57.66 s to 63.71 s REJECTED, only 6.05 s (minimum is 60.0 s)
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1002, block 1 ACCEPTED, 61.04 s (63.71 s to 124.75 s, text 'Stimulus/s1002')
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1002, block 2 ACCEPTED, 64.94 s (246.15 s to 311.09 s, text 'Stimulus/s1002')
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1002, block 3 ACCEPTED, 63.86 s (465.90 s to 529.76 s, text 'Stimulus/s1002')
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: code 1002, 3 block(s) accepted, 2 pair(s) rejected
+2026-10-21 16:53:01  WARNING  px_03 / pre_task_rest: code 1002, expected 2 blocks but accepted 3. Check the marker stream for this recording.
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: stage 0 counted 8 annotations with code 1002; this script accepted 3 block(s)
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: expected block order from the CSV : OFF ON OFF ON
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: detected block order from the EEG : OFF ON OFF ON OFF
+2026-10-21 16:53:01  ERROR    px_03 / pre_task_rest: cannot line the 5 detected block(s) up against the 4 expected block(s) unambiguously. The blocks are NOT validated for this session, and are all kept. Check this recording by hand.
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 1 (ON) is 62.64 s -> cropped to 60 s (6 epochs), 2.64 s of remainder dropped
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 2 (ON) is 62.84 s -> cropped to 60 s (6 epochs), 2.84 s of remainder dropped
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 1 (OFF) is 61.04 s -> cropped to 60 s (6 epochs), 1.04 s of remainder dropped
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 2 (OFF) is 64.94 s -> cropped to 60 s (6 epochs), 4.94 s of remainder dropped
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 3 (OFF) is 63.86 s -> cropped to 60 s (6 epochs), 3.86 s of remainder dropped
+2026-10-21 16:53:01  INFO     px_03 / pre_task_rest: block 3 (OFF) -> 6 epochs
+2026-10-21 16:53:34  INFO     px_03 / pre_task_rest: AutoReject kept 30 of 30 epochs
+2026-10-21 16:53:34  INFO     px_03 / pre_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:53:34  INFO     px_03 / pre_task_rest / OFF: 18 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: loaded, 402.2 s of data, 61 channels
+2026-10-21 16:53:34  WARNING  px_03 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: 4 annotations found for code 1004 (first_time = 21.376 s, data ends at 402.248 s, markers span 1.000 s to 298.148 s after correction)
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: code 1004, block 1 ACCEPTED, 61.42 s (1.00 s to 62.42 s, text 'Stimulus/s1004')
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: code 1004, block 2 ACCEPTED, 66.17 s (231.98 s to 298.15 s, text 'Stimulus/s1004')
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:53:34  WARNING  px_03 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: 4 annotations found for code 1002 (first_time = 21.376 s, data ends at 402.248 s, markers span 102.948 s to 401.248 s after correction)
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: code 1002, block 1 ACCEPTED, 69.49 s (102.95 s to 172.44 s, text 'Stimulus/s1002')
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: code 1002, block 2 ACCEPTED, 73.30 s (327.95 s to 401.25 s, text 'Stimulus/s1002')
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: expected block order from the CSV : ON OFF ON OFF
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: detected block order from the EEG : ON OFF ON OFF
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 1 (1.00-62.42 s) is ON, CSV block 1 says ON. MATCH.
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 2 (102.95-172.44 s) is OFF, CSV block 2 says OFF. MATCH.
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 3 (231.98-298.15 s) is ON, CSV block 3 says ON. MATCH.
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 4 (327.95-401.25 s) is OFF, CSV block 4 says OFF. MATCH.
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 1 (ON) is 61.42 s -> cropped to 60 s (6 epochs), 1.42 s of remainder dropped
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 2 (ON) is 66.17 s -> cropped to 60 s (6 epochs), 6.17 s of remainder dropped
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 1 (OFF) is 69.49 s -> cropped to 60 s (6 epochs), 9.49 s of remainder dropped
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 2 (OFF) is 73.30 s -> cropped to 70 s (7 epochs), 3.30 s of remainder dropped
+2026-10-21 16:53:34  INFO     px_03 / post_task_rest: block 2 (OFF) -> 7 epochs
+2026-10-21 16:53:57  INFO     px_03 / post_task_rest: AutoReject kept 25 of 25 epochs
+2026-10-21 16:53:57  INFO     px_03 / post_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:53:57  INFO     px_03 / post_task_rest / OFF: 13 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:54:00  INFO     px_03: extraction finished, 110 epoch-level rows (110 with a usable FOOOF fit); 115 spectra collected for the group figure so far
+2026-10-21 16:54:00  INFO     ----------------------------------------------------------------------
+2026-10-21 16:54:00  INFO     Processing px_04
+2026-10-21 16:54:00  INFO     px_04: stimulator on Left hand -> target ROI is right
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: 21 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: ICLabel -> brain 39, channel noise 1, eye blink 2, line noise 5, muscle artifact 7, other 6  (brain = 39)
+2026-10-21 16:54:00  INFO     px_04 / post_task_rest: 14 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:54:00  INFO     px_04 / post_task_rest: ICLabel -> brain 46, eye blink 1, line noise 1, muscle artifact 4, other 8  (brain = 46)
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: loaded, 522.9 s of data, 61 channels
+2026-10-21 16:54:00  WARNING  px_04 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: 4 annotations found for code 1004 (first_time = 23.372 s, data ends at 522.888 s, markers span 106.252 s to 521.888 s after correction)
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: code 1004, block 1 ACCEPTED, 65.66 s (106.25 s to 171.91 s, text 'Stimulus/s1004')
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: code 1004, block 2 ACCEPTED, 62.63 s (459.26 s to 521.89 s, text 'Stimulus/s1004')
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:54:00  WARNING  px_04 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: 4 annotations found for code 1002 (first_time = 23.372 s, data ends at 522.888 s, markers span 1.000 s to 410.008 s after correction)
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: code 1002, block 1 ACCEPTED, 60.32 s (1.00 s to 61.32 s, text 'Stimulus/s1002')
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: code 1002, block 2 ACCEPTED, 74.30 s (335.70 s to 410.01 s, text 'Stimulus/s1002')
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: expected block order from the CSV : OFF ON OFF ON
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: detected block order from the EEG : OFF ON OFF ON
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 1 (1.00-61.32 s) is OFF, CSV block 1 says OFF. MATCH.
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 2 (106.25-171.91 s) is ON, CSV block 2 says ON. MATCH.
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 3 (335.70-410.01 s) is OFF, CSV block 3 says OFF. MATCH.
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 4 (459.26-521.89 s) is ON, CSV block 4 says ON. MATCH.
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 1 (ON) is 65.66 s -> cropped to 60 s (6 epochs), 5.66 s of remainder dropped
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 2 (ON) is 62.63 s -> cropped to 60 s (6 epochs), 2.63 s of remainder dropped
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 1 (OFF) is 60.32 s -> cropped to 60 s (6 epochs), 0.32 s of remainder dropped
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 2 (OFF) is 74.30 s -> cropped to 70 s (7 epochs), 4.30 s of remainder dropped
+2026-10-21 16:54:00  INFO     px_04 / pre_task_rest: block 2 (OFF) -> 7 epochs
+2026-10-21 16:54:25  INFO     px_04 / pre_task_rest: AutoReject kept 25 of 25 epochs
+2026-10-21 16:54:25  INFO     px_04 / pre_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:54:25  INFO     px_04 / pre_task_rest / OFF: 13 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: loaded, 372.1 s of data, 61 channels
+2026-10-21 16:54:25  WARNING  px_04 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: 4 annotations found for code 1004 (first_time = 10.200 s, data ends at 372.052 s, markers span 84.360 s to 371.052 s after correction)
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: code 1004, block 1 ACCEPTED, 60.98 s (84.36 s to 145.34 s, text 'Stimulus/s1004')
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: code 1004, block 2 ACCEPTED, 61.06 s (310.00 s to 371.05 s, text 'Stimulus/s1004')
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:54:25  WARNING  px_04 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: 5 annotations found for code 1002 (first_time = 10.200 s, data ends at 372.052 s, markers span 1.000 s to 263.692 s after correction)
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: code 1002, block 1 ACCEPTED, 60.90 s (1.00 s to 61.90 s, text 'Stimulus/s1002')
+2026-10-21 16:54:25  WARNING  px_04 / post_task_rest: code 1002, pair at 196.98 s to 197.19 s REJECTED, only 0.22 s (minimum is 60.0 s)
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: code 1002, block 2 ACCEPTED, 66.50 s (197.19 s to 263.69 s, text 'Stimulus/s1002')
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: code 1002, 2 block(s) accepted, 1 pair(s) rejected
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: stage 0 counted 5 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: expected block order from the CSV : OFF ON OFF ON
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: detected block order from the EEG : OFF ON OFF ON
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 1 (1.00-61.90 s) is OFF, CSV block 1 says OFF. MATCH.
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 2 (84.36-145.34 s) is ON, CSV block 2 says ON. MATCH.
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 3 (197.19-263.69 s) is OFF, CSV block 3 says OFF. MATCH.
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 4 (310.00-371.05 s) is ON, CSV block 4 says ON. MATCH.
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 1 (ON) is 60.98 s -> cropped to 60 s (6 epochs), 0.98 s of remainder dropped
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 2 (ON) is 61.06 s -> cropped to 60 s (6 epochs), 1.06 s of remainder dropped
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 1 (OFF) is 60.90 s -> cropped to 60 s (6 epochs), 0.90 s of remainder dropped
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 2 (OFF) is 66.50 s -> cropped to 60 s (6 epochs), 6.50 s of remainder dropped
+2026-10-21 16:54:25  INFO     px_04 / post_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:54:47  INFO     px_04 / post_task_rest: AutoReject kept 24 of 24 epochs
+2026-10-21 16:54:47  INFO     px_04 / post_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:54:47  INFO     px_04 / post_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:54:50  INFO     px_04: extraction finished, 98 epoch-level rows (98 with a usable FOOOF fit); 164 spectra collected for the group figure so far
+2026-10-21 16:54:50  INFO     ----------------------------------------------------------------------
+2026-10-21 16:54:50  INFO     Processing px_05
+2026-10-21 16:54:50  INFO     px_05: stimulator on Right hand -> target ROI is left
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: 45 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: ICLabel -> brain 15, eye blink 3, line noise 6, muscle artifact 21, other 15  (brain = 15)
+2026-10-21 16:54:50  INFO     px_05 / post_task_rest: 42 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:54:50  INFO     px_05 / post_task_rest: ICLabel -> brain 18, channel noise 1, eye blink 4, line noise 4, muscle artifact 25, other 8  (brain = 18)
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: loaded, 390.3 s of data, 61 channels
+2026-10-21 16:54:50  WARNING  px_05 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: 4 annotations found for code 1004 (first_time = 9.340 s, data ends at 390.292 s, markers span 1.000 s to 275.804 s after correction)
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: code 1004, block 1 ACCEPTED, 63.58 s (1.00 s to 64.58 s, text 'Stimulus/s1004')
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: code 1004, block 2 ACCEPTED, 65.95 s (209.86 s to 275.80 s, text 'Stimulus/s1004')
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:54:50  WARNING  px_05 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: 4 annotations found for code 1002 (first_time = 9.340 s, data ends at 390.292 s, markers span 108.612 s to 389.292 s after correction)
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: code 1002, block 1 ACCEPTED, 65.12 s (108.61 s to 173.73 s, text 'Stimulus/s1002')
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: code 1002, block 2 ACCEPTED, 70.34 s (318.95 s to 389.29 s, text 'Stimulus/s1002')
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: expected block order from the CSV : ON OFF ON OFF
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: detected block order from the EEG : ON OFF ON OFF
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 1 (1.00-64.58 s) is ON, CSV block 1 says ON. MATCH.
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 2 (108.61-173.73 s) is OFF, CSV block 2 says OFF. MATCH.
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 3 (209.86-275.80 s) is ON, CSV block 3 says ON. MATCH.
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 4 (318.95-389.29 s) is OFF, CSV block 4 says OFF. MATCH.
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 1 (ON) is 63.58 s -> cropped to 60 s (6 epochs), 3.58 s of remainder dropped
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 2 (ON) is 65.95 s -> cropped to 60 s (6 epochs), 5.95 s of remainder dropped
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 1 (OFF) is 65.12 s -> cropped to 60 s (6 epochs), 5.12 s of remainder dropped
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 2 (OFF) is 70.34 s -> cropped to 70 s (7 epochs), 0.34 s of remainder dropped
+2026-10-21 16:54:50  INFO     px_05 / pre_task_rest: block 2 (OFF) -> 7 epochs
+2026-10-21 16:55:14  INFO     px_05 / pre_task_rest: AutoReject kept 25 of 25 epochs
+2026-10-21 16:55:14  INFO     px_05 / pre_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:55:14  INFO     px_05 / pre_task_rest / OFF: 13 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: loaded, 359.0 s of data, 61 channels
+2026-10-21 16:55:14  WARNING  px_05 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: 2 annotations found for code 1004 (first_time = 30.412 s, data ends at 358.980 s, markers span 297.784 s to 357.980 s after correction)
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: code 1004, block 1 ACCEPTED, 60.20 s (297.78 s to 357.98 s, text 'Stimulus/s1004')
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: code 1004, 1 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:55:14  WARNING  px_05 / post_task_rest: code 1004, expected 2 blocks but accepted 1. Check the marker stream for this recording.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: stage 0 counted 2 annotations with code 1004; this script accepted 1 block(s)
+2026-10-21 16:55:14  WARNING  px_05 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: 6 annotations found for code 1002 (first_time = 30.412 s, data ends at 358.980 s, markers span 1.000 s to 280.220 s after correction)
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: code 1002, block 1 ACCEPTED, 61.56 s (1.00 s to 62.56 s, text 'Stimulus/s1002')
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: code 1002, block 2 ACCEPTED, 71.35 s (116.20 s to 187.55 s, text 'Stimulus/s1002')
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: code 1002, block 3 ACCEPTED, 70.63 s (209.59 s to 280.22 s, text 'Stimulus/s1002')
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: code 1002, 3 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:55:14  WARNING  px_05 / post_task_rest: code 1002, expected 2 blocks but accepted 3. Check the marker stream for this recording.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: stage 0 counted 6 annotations with code 1002; this script accepted 3 block(s)
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: expected block order from the CSV : OFF ON OFF ON
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: detected block order from the EEG : OFF OFF OFF ON
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 1 (1.00-62.56 s) is OFF, CSV block 1 says OFF. MATCH.
+2026-10-21 16:55:14  ERROR    px_05 / post_task_rest: block 2 (116.20-187.55 s) is marked OFF in the EEG but CSV block 2 says ON. MISMATCH -- block DROPPED.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 3 (209.59-280.22 s) is OFF, CSV block 3 says OFF. MATCH.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 4 (297.78-357.98 s) is ON, CSV block 4 says ON. MATCH.
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 1 (ON) is 60.20 s -> cropped to 60 s (6 epochs), 0.20 s of remainder dropped
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 1 (OFF) is 61.56 s -> cropped to 60 s (6 epochs), 1.56 s of remainder dropped
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 2 (OFF) is 70.63 s -> cropped to 70 s (7 epochs), 0.63 s of remainder dropped
+2026-10-21 16:55:14  INFO     px_05 / post_task_rest: block 2 (OFF) -> 7 epochs
+2026-10-21 16:55:32  INFO     px_05 / post_task_rest: AutoReject kept 19 of 19 epochs
+2026-10-21 16:55:32  INFO     px_05 / post_task_rest / ON: 6 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:55:32  INFO     px_05 / post_task_rest / OFF: 13 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:55:34  INFO     px_05: extraction finished, 88 epoch-level rows (88 with a usable FOOOF fit); 208 spectra collected for the group figure so far
+2026-10-21 16:55:34  INFO     ----------------------------------------------------------------------
+2026-10-21 16:55:34  INFO     Processing px_06
+2026-10-21 16:55:34  INFO     px_06: stimulator on Right hand -> target ROI is left
+2026-10-21 16:55:34  WARNING  px_06 / pre_task_rest: stage 0 JSON not found at /home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_06/px_06_pre_task_rest_stage0.json
+2026-10-21 16:55:34  WARNING  px_06 / pre_task_rest: the noisy-ICA check is SKIPPED for this session. Set IC_REJECT_JSON_KEY in h1_config.py to the correct key name to enable it.
+2026-10-21 16:55:34  WARNING  px_06 / pre_task_rest: no ICLabel counts found in the stage 0 log. The brain-component check is SKIPPED.
+2026-10-21 16:55:34  INFO     px_06 / post_task_rest: 17 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:55:34  INFO     px_06 / post_task_rest: ICLabel -> brain 43, channel noise 1, heart beat 1, line noise 2, muscle artifact 7, other 6  (brain = 43)
+2026-10-21 16:55:34  WARNING  EXCLUDED px_06 -- missing_file (/home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_06/px_06_pre_task_rest_clean-raw.fif)
+2026-10-21 16:55:34  INFO     ----------------------------------------------------------------------
+2026-10-21 16:55:34  INFO     Processing px_07
+2026-10-21 16:55:34  INFO     px_07: stimulator on Right hand -> target ROI is left
+2026-10-21 16:55:34  WARNING  px_07 / pre_task_rest: stage 0 JSON not found at /home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_07/px_07_pre_task_rest_stage0.json
+2026-10-21 16:55:34  WARNING  px_07 / pre_task_rest: the noisy-ICA check is SKIPPED for this session. Set IC_REJECT_JSON_KEY in h1_config.py to the correct key name to enable it.
+2026-10-21 16:55:34  WARNING  px_07 / pre_task_rest: no ICLabel counts found in the stage 0 log. The brain-component check is SKIPPED.
+2026-10-21 16:55:34  WARNING  px_07 / post_task_rest: stage 0 JSON not found at /home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_07/px_07_post_task_rest_stage0.json
+2026-10-21 16:55:34  WARNING  px_07 / post_task_rest: the noisy-ICA check is SKIPPED for this session. Set IC_REJECT_JSON_KEY in h1_config.py to the correct key name to enable it.
+2026-10-21 16:55:34  WARNING  px_07 / post_task_rest: no ICLabel counts found in the stage 0 log. The brain-component check is SKIPPED.
+2026-10-21 16:55:34  WARNING  EXCLUDED px_07 -- missing_file (/home/hamzeh/Documents/MEAOW_project/EEG_Dataset/gedaied_raw/derivatives/px_07/px_07_pre_task_rest_clean-raw.fif)
+2026-10-21 16:55:34  INFO     ----------------------------------------------------------------------
+2026-10-21 16:55:34  INFO     Processing px_08
+2026-10-21 16:55:34  INFO     px_08: stimulator on Right hand -> target ROI is left
+2026-10-21 16:55:34  INFO     px_08 / pre_task_rest: 43 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:55:34  INFO     px_08 / pre_task_rest: ICLabel -> brain 17, channel noise 2, eye blink 3, heart beat 1, line noise 14, muscle artifact 6, other 17  (brain = 17)
+2026-10-21 16:55:34  INFO     px_08 / post_task_rest: 56 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:55:34  WARNING  EXCLUDED px_08 -- noisy_ica (post_task_rest: 56 of 60 ICs rejected)
+2026-10-21 16:55:34  INFO     ----------------------------------------------------------------------
+2026-10-21 16:55:34  INFO     Processing px_09
+2026-10-21 16:55:34  INFO     px_09: stimulator on Left hand -> target ROI is right
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: 12 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: ICLabel -> brain 48, eye blink 2, heart beat 1, muscle artifact 1, other 8  (brain = 48)
+2026-10-21 16:55:34  INFO     px_09 / post_task_rest: 9 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:55:34  INFO     px_09 / post_task_rest: ICLabel -> brain 51, eye blink 1, muscle artifact 3, other 5  (brain = 51)
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: loaded, 335.8 s of data, 61 channels
+2026-10-21 16:55:34  WARNING  px_09 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: 4 annotations found for code 1004 (first_time = 31.396 s, data ends at 335.804 s, markers span 1.000 s to 248.912 s after correction)
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: code 1004, block 1 ACCEPTED, 73.23 s (1.00 s to 74.23 s, text 'Stimulus/s1004')
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: code 1004, block 2 ACCEPTED, 62.28 s (186.63 s to 248.91 s, text 'Stimulus/s1004')
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:55:34  WARNING  px_09 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: 4 annotations found for code 1002 (first_time = 31.396 s, data ends at 335.804 s, markers span 104.264 s to 334.804 s after correction)
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: code 1002, block 1 ACCEPTED, 61.49 s (104.26 s to 165.75 s, text 'Stimulus/s1002')
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: code 1002, block 2 ACCEPTED, 63.28 s (271.52 s to 334.80 s, text 'Stimulus/s1002')
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: expected block order from the CSV : ON OFF ON OFF
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: detected block order from the EEG : ON OFF ON OFF
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 1 (1.00-74.23 s) is ON, CSV block 1 says ON. MATCH.
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 2 (104.26-165.75 s) is OFF, CSV block 2 says OFF. MATCH.
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 3 (186.63-248.91 s) is ON, CSV block 3 says ON. MATCH.
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 4 (271.52-334.80 s) is OFF, CSV block 4 says OFF. MATCH.
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 1 (ON) is 73.23 s -> cropped to 70 s (7 epochs), 3.23 s of remainder dropped
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 1 (ON) -> 7 epochs
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 2 (ON) is 62.28 s -> cropped to 60 s (6 epochs), 2.28 s of remainder dropped
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 1 (OFF) is 61.49 s -> cropped to 60 s (6 epochs), 1.49 s of remainder dropped
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 2 (OFF) is 63.28 s -> cropped to 60 s (6 epochs), 3.28 s of remainder dropped
+2026-10-21 16:55:34  INFO     px_09 / pre_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:55:57  INFO     px_09 / pre_task_rest: AutoReject kept 25 of 25 epochs
+2026-10-21 16:55:57  INFO     px_09 / pre_task_rest / ON: 13 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:55:57  INFO     px_09 / pre_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: loaded, 328.3 s of data, 61 channels
+2026-10-21 16:55:57  WARNING  px_09 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: 4 annotations found for code 1004 (first_time = 13.408 s, data ends at 328.336 s, markers span 1.000 s to 245.812 s after correction)
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: code 1004, block 1 ACCEPTED, 66.09 s (1.00 s to 67.09 s, text 'Stimulus/s1004')
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: code 1004, block 2 ACCEPTED, 61.21 s (184.60 s to 245.81 s, text 'Stimulus/s1004')
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:55:57  WARNING  px_09 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: 4 annotations found for code 1002 (first_time = 13.408 s, data ends at 328.336 s, markers span 102.236 s to 327.336 s after correction)
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: code 1002, block 1 ACCEPTED, 62.57 s (102.24 s to 164.80 s, text 'Stimulus/s1002')
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: code 1002, block 2 ACCEPTED, 62.59 s (264.74 s to 327.34 s, text 'Stimulus/s1002')
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: expected block order from the CSV : ON OFF ON OFF
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: detected block order from the EEG : ON OFF ON OFF
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 1 (1.00-67.09 s) is ON, CSV block 1 says ON. MATCH.
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 2 (102.24-164.80 s) is OFF, CSV block 2 says OFF. MATCH.
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 3 (184.60-245.81 s) is ON, CSV block 3 says ON. MATCH.
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 4 (264.74-327.34 s) is OFF, CSV block 4 says OFF. MATCH.
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 1 (ON) is 66.09 s -> cropped to 60 s (6 epochs), 6.09 s of remainder dropped
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 2 (ON) is 61.21 s -> cropped to 60 s (6 epochs), 1.21 s of remainder dropped
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 1 (OFF) is 62.57 s -> cropped to 60 s (6 epochs), 2.57 s of remainder dropped
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 2 (OFF) is 62.59 s -> cropped to 60 s (6 epochs), 2.59 s of remainder dropped
+2026-10-21 16:55:57  INFO     px_09 / post_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:56:17  INFO     px_09 / post_task_rest: AutoReject kept 24 of 24 epochs
+2026-10-21 16:56:17  INFO     px_09 / post_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:56:17  INFO     px_09 / post_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:56:20  INFO     px_09: extraction finished, 98 epoch-level rows (98 with a usable FOOOF fit); 257 spectra collected for the group figure so far
+2026-10-21 16:56:20  INFO     ----------------------------------------------------------------------
+2026-10-21 16:56:20  INFO     Processing px_10
+2026-10-21 16:56:20  INFO     px_10: stimulator on Right hand -> target ROI is left
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: 14 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: ICLabel -> brain 46, eye blink 2, heart beat 1, line noise 2, muscle artifact 7, other 2  (brain = 46)
+2026-10-21 16:56:20  INFO     px_10 / post_task_rest: 11 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:56:20  INFO     px_10 / post_task_rest: ICLabel -> brain 49, eye blink 1, heart beat 1, other 9  (brain = 49)
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: loaded, 363.7 s of data, 61 channels
+2026-10-21 16:56:20  WARNING  px_10 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: 4 annotations found for code 1004 (first_time = 34.492 s, data ends at 363.716 s, markers span 1.000 s to 268.824 s after correction)
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: code 1004, block 1 ACCEPTED, 71.54 s (1.00 s to 72.54 s, text 'Stimulus/s1004')
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: code 1004, block 2 ACCEPTED, 66.03 s (202.79 s to 268.82 s, text 'Stimulus/s1004')
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:56:20  WARNING  px_10 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: 4 annotations found for code 1002 (first_time = 34.492 s, data ends at 363.716 s, markers span 113.724 s to 362.716 s after correction)
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: code 1002, block 1 ACCEPTED, 63.08 s (113.72 s to 176.80 s, text 'Stimulus/s1002')
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: code 1002, block 2 ACCEPTED, 65.10 s (297.62 s to 362.72 s, text 'Stimulus/s1002')
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: expected block order from the CSV : ON OFF ON OFF
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: detected block order from the EEG : ON OFF ON OFF
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 1 (1.00-72.54 s) is ON, CSV block 1 says ON. MATCH.
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 2 (113.72-176.80 s) is OFF, CSV block 2 says OFF. MATCH.
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 3 (202.79-268.82 s) is ON, CSV block 3 says ON. MATCH.
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 4 (297.62-362.72 s) is OFF, CSV block 4 says OFF. MATCH.
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 1 (ON) is 71.54 s -> cropped to 70 s (7 epochs), 1.54 s of remainder dropped
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 1 (ON) -> 7 epochs
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 2 (ON) is 66.03 s -> cropped to 60 s (6 epochs), 6.03 s of remainder dropped
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 1 (OFF) is 63.08 s -> cropped to 60 s (6 epochs), 3.08 s of remainder dropped
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 2 (OFF) is 65.10 s -> cropped to 60 s (6 epochs), 5.10 s of remainder dropped
+2026-10-21 16:56:20  INFO     px_10 / pre_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:56:40  INFO     px_10 / pre_task_rest: AutoReject kept 25 of 25 epochs
+2026-10-21 16:56:40  INFO     px_10 / pre_task_rest / ON: 13 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:56:40  INFO     px_10 / pre_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: loaded, 326.0 s of data, 61 channels
+2026-10-21 16:56:40  WARNING  px_10 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: 4 annotations found for code 1004 (first_time = 4.040 s, data ends at 326.032 s, markers span 1.000 s to 237.476 s after correction)
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: code 1004, block 1 ACCEPTED, 67.10 s (1.00 s to 68.10 s, text 'Stimulus/s1004')
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: code 1004, block 2 ACCEPTED, 63.01 s (174.47 s to 237.48 s, text 'Stimulus/s1004')
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:56:40  WARNING  px_10 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: 4 annotations found for code 1002 (first_time = 4.040 s, data ends at 326.032 s, markers span 93.516 s to 325.032 s after correction)
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: code 1002, block 1 ACCEPTED, 61.57 s (93.52 s to 155.09 s, text 'Stimulus/s1002')
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: code 1002, block 2 ACCEPTED, 63.36 s (261.67 s to 325.03 s, text 'Stimulus/s1002')
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: expected block order from the CSV : ON OFF ON OFF
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: detected block order from the EEG : ON OFF ON OFF
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 1 (1.00-68.10 s) is ON, CSV block 1 says ON. MATCH.
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 2 (93.52-155.09 s) is OFF, CSV block 2 says OFF. MATCH.
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 3 (174.47-237.48 s) is ON, CSV block 3 says ON. MATCH.
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 4 (261.67-325.03 s) is OFF, CSV block 4 says OFF. MATCH.
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 1 (ON) is 67.10 s -> cropped to 60 s (6 epochs), 7.10 s of remainder dropped
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 2 (ON) is 63.01 s -> cropped to 60 s (6 epochs), 3.01 s of remainder dropped
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 1 (OFF) is 61.57 s -> cropped to 60 s (6 epochs), 1.57 s of remainder dropped
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 2 (OFF) is 63.36 s -> cropped to 60 s (6 epochs), 3.36 s of remainder dropped
+2026-10-21 16:56:40  INFO     px_10 / post_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:56:59  INFO     px_10 / post_task_rest: AutoReject kept 24 of 24 epochs
+2026-10-21 16:56:59  INFO     px_10 / post_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:56:59  INFO     px_10 / post_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:57:02  INFO     px_10: extraction finished, 98 epoch-level rows (98 with a usable FOOOF fit); 306 spectra collected for the group figure so far
+2026-10-21 16:57:02  INFO     ----------------------------------------------------------------------
+2026-10-21 16:57:02  INFO     Processing px_11
+2026-10-21 16:57:02  INFO     px_11: stimulator on Right hand -> target ROI is left
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: 10 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: ICLabel -> brain 50, eye blink 1, other 9  (brain = 50)
+2026-10-21 16:57:02  INFO     px_11 / post_task_rest: 10 ICs rejected (from the stage 0 manifest)
+2026-10-21 16:57:02  INFO     px_11 / post_task_rest: ICLabel -> brain 50, eye blink 1, heart beat 1, muscle artifact 1, other 7  (brain = 50)
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: loaded, 328.6 s of data, 61 channels
+2026-10-21 16:57:02  WARNING  px_11 / pre_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: 4 annotations found for code 1004 (first_time = 5.412 s, data ends at 328.600 s, markers span 82.008 s to 327.600 s after correction)
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: code 1004, block 1 ACCEPTED, 62.08 s (82.01 s to 144.09 s, text 'Stimulus/s1004')
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: code 1004, block 2 ACCEPTED, 62.06 s (265.54 s to 327.60 s, text 'Stimulus/s1004')
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: code 1004, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: stage 0 counted 4 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:57:02  WARNING  px_11 / pre_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: 4 annotations found for code 1002 (first_time = 5.412 s, data ends at 328.600 s, markers span 1.000 s to 243.720 s after correction)
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: code 1002, block 1 ACCEPTED, 61.57 s (1.00 s to 62.57 s, text 'Stimulus/s1002')
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: code 1002, block 2 ACCEPTED, 63.02 s (180.70 s to 243.72 s, text 'Stimulus/s1002')
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: code 1002, 2 block(s) accepted, 0 pair(s) rejected
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 2 block(s)
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: expected block order from the CSV : OFF ON OFF ON
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: detected block order from the EEG : OFF ON OFF ON
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 1 (1.00-62.57 s) is OFF, CSV block 1 says OFF. MATCH.
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 2 (82.01-144.09 s) is ON, CSV block 2 says ON. MATCH.
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 3 (180.70-243.72 s) is OFF, CSV block 3 says OFF. MATCH.
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 4 (265.54-327.60 s) is ON, CSV block 4 says ON. MATCH.
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 1 (ON) is 62.08 s -> cropped to 60 s (6 epochs), 2.08 s of remainder dropped
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 2 (ON) is 62.06 s -> cropped to 60 s (6 epochs), 2.06 s of remainder dropped
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 1 (OFF) is 61.57 s -> cropped to 60 s (6 epochs), 1.57 s of remainder dropped
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 2 (OFF) is 63.02 s -> cropped to 60 s (6 epochs), 3.02 s of remainder dropped
+2026-10-21 16:57:02  INFO     px_11 / pre_task_rest: block 2 (OFF) -> 6 epochs
+2026-10-21 16:57:24  INFO     px_11 / pre_task_rest: AutoReject kept 24 of 24 epochs
+2026-10-21 16:57:24  INFO     px_11 / pre_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:57:24  INFO     px_11 / pre_task_rest / OFF: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: loaded, 314.4 s of data, 61 channels
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: condition ON did not match the configured text ['Comment/timulus/s1004']. Fell back to the trailing code 1004, which matched ['Stimulus/s1004']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: 6 annotations found for code 1004 (first_time = 1.380 s, data ends at 314.416 s, markers span 66.668 s to 313.416 s after correction)
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: code 1004, pair at 66.67 s to 68.18 s REJECTED, only 1.51 s (minimum is 60.0 s)
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: code 1004, pair at 68.18 s to 83.37 s REJECTED, only 15.20 s (minimum is 60.0 s)
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: code 1004, block 1 ACCEPTED, 61.99 s (83.37 s to 145.36 s, text 'Stimulus/s1004')
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: code 1004, block 2 ACCEPTED, 64.30 s (249.11 s to 313.42 s, text 'Stimulus/s1004')
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: code 1004, 2 block(s) accepted, 2 pair(s) rejected
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: stage 0 counted 6 annotations with code 1004; this script accepted 2 block(s)
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: condition OFF did not match the configured text ['Comment/timulus/s1002']. Fell back to the trailing code 1002, which matched ['Stimulus/s1002']. Update ANNOTATION_DESCRIPTIONS in h1_config.py.
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: 4 annotations found for code 1002 (first_time = 1.380 s, data ends at 314.416 s, markers span 1.000 s to 233.632 s after correction)
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: code 1002, block 1 ACCEPTED, 62.64 s (1.00 s to 63.64 s, text 'Stimulus/s1002')
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: code 1002, pair at 174.16 s to 233.63 s REJECTED, only 59.47 s (minimum is 60.0 s)
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: code 1002, the marker at 233.63 s has no partner after it and is unused
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: code 1002, 1 block(s) accepted, 1 pair(s) rejected
+2026-10-21 16:57:24  WARNING  px_11 / post_task_rest: code 1002, expected 2 blocks but accepted 1. Check the marker stream for this recording.
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: stage 0 counted 4 annotations with code 1002; this script accepted 1 block(s)
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: expected block order from the CSV : OFF ON OFF ON
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: detected block order from the EEG : OFF ON ON
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 1 (1.00-63.64 s) is OFF, CSV block 1 says OFF. MATCH.
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 2 (83.37-145.36 s) is ON, CSV block 2 says ON. MATCH.
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 3 (249.11-313.42 s) is ON, CSV block 4 says ON. MATCH.
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 1 (ON) is 61.99 s -> cropped to 60 s (6 epochs), 1.99 s of remainder dropped
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 1 (ON) -> 6 epochs
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 2 (ON) is 64.30 s -> cropped to 60 s (6 epochs), 4.30 s of remainder dropped
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 2 (ON) -> 6 epochs
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 1 (OFF) is 62.64 s -> cropped to 60 s (6 epochs), 2.64 s of remainder dropped
+2026-10-21 16:57:24  INFO     px_11 / post_task_rest: block 1 (OFF) -> 6 epochs
+2026-10-21 16:57:41  INFO     px_11 / post_task_rest: AutoReject kept 18 of 18 epochs
+2026-10-21 16:57:41  INFO     px_11 / post_task_rest / ON: 12 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:57:41  INFO     px_11 / post_task_rest / OFF: 6 epochs, 0 dropped by AutoReject (0%)
+2026-10-21 16:57:45  INFO     px_11: extraction finished, 84 epoch-level rows (84 with a usable FOOOF fit); 348 spectra collected for the group figure so far
+2026-10-21 16:57:45  INFO     Block validation across all participants: {'match': 42, 'not_validated': 6, 'alignment_failed': 5, 'mismatch_dropped': 1}
+2026-10-21 16:57:45  ERROR    MISMATCH px_05 / post_task_rest block 2: EEG says OFF, CSV says ON
+2026-10-21 16:57:45  INFO     ----------------------------------------------------------------------
+2026-10-21 16:57:45  INFO     Averaging spectra across all included participants
+2026-10-21 16:57:45  INFO     Group spectrum values written to /home/hamzeh/Documents/MEAOW_project/hypothesis_1/h1_group_spectra.csv
+2026-10-21 16:57:45  INFO     Group figure will average 348 epoch spectra across 4 cells
+2026-10-21 16:57:45  INFO     Group spectrum figure written to /home/hamzeh/Documents/MEAOW_project/hypothesis_1/h1_group_spectra.png (348 epochs)
+2026-10-21 16:57:45  INFO     ======================================================================
+2026-10-21 16:57:45  INFO     Extraction complete
+2026-10-21 16:57:45  INFO       participants kept     : 7
+2026-10-21 16:57:45  INFO       participants excluded : 4
+2026-10-21 16:57:45  INFO           px_02 -> no_valid_blocks
+2026-10-21 16:57:45  INFO           px_06 -> missing_file
+2026-10-21 16:57:45  INFO           px_07 -> missing_file
+2026-10-21 16:57:45  INFO           px_08 -> noisy_ica
+2026-10-21 16:57:45  INFO       epoch-level rows      : 696
+2026-10-21 16:57:45  INFO     Next step: run h1_group.py
+2026-10-21 16:57:45  INFO     ======================================================================
+2026-10-21 17:02:54  INFO     ======================================================================
+2026-10-21 17:02:54  INFO     H1 group-level assembly started
+2026-10-21 17:02:54  INFO     ======================================================================
+2026-10-21 17:02:54  INFO     Read 696 epoch-level rows from 7 participants
+2026-10-21 17:02:54  INFO     ----------------------------------------------------------------------
+2026-10-21 17:02:54  INFO     Building the participant-level table on the FULL sample
+2026-10-21 17:02:54  INFO     ROI left  : fit error across 348 epochs from 7 participants, mean = 0.1337, SD = 0.0114
+2026-10-21 17:02:54  INFO     ROI right : fit error across 348 epochs from 7 participants, mean = 0.1383, SD = 0.0147
+2026-10-21 17:02:54  INFO     FOOOF fits that failed outright : 0
+2026-10-21 17:02:54  INFO     Epochs dropped by the z > 2.0 fit screen : 23 of 696
+2026-10-21 17:02:54  INFO     Participant-level table written: 7 valid participants
+2026-10-21 17:02:54  INFO     Goodness-of-fit across retained epochs: r-squared = 0.949 +/- 0.040
+2026-10-21 17:02:54  INFO     ----------------------------------------------------------------------
+2026-10-21 17:02:54  INFO     Rebuilding the analysis for every interim sample size
+2026-10-21 17:02:54  INFO     No 'order' column found; enrolment order assumed to follow the participant numbering (hx_01, hx_02, ...)
+2026-10-21 17:02:54  WARNING  Only 7 valid participants. The early stopping rule does not begin until N = 22, so no interim analysis is produced yet.
+2026-10-21 17:02:54  INFO     ======================================================================
+2026-10-21 17:02:54  INFO     Group assembly complete
+2026-10-21 17:02:54  INFO     REMINDER: the early stopping rule requires all FOUR hypotheses to reach a conclusive Bayes factor. This pipeline evaluates H1 only, so its output is an interim record and never a stop decision on its own.
+2026-10-21 17:02:54  INFO     Next step: run h1_analysis.R
+2026-10-21 17:02:54  INFO     ======================================================================

@@ -1,0 +1,20 @@
+fit screen: 139 of 4596 epochs dropped at z > 2.0
+model fit across retained epochs: 0.1478 +/- 0.0203 (mean +/- SD, error)
+26 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_beta_mean.csv
+Group spectra -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_group_spectra_mean.png
+fit screen: 166 of 6185 epochs dropped at z > 2.0
+model fit across retained epochs: 0.1488 +/- 0.0210 (mean +/- SD, error)
+35 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_beta_mean.csv
+Group spectra -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_group_spectra_mean.png
+fit screen: 177 of 6575 epochs dropped at z > 2.0
+model fit across retained epochs: 0.1498 +/- 0.0207 (mean +/- SD, error)
+37 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_beta_mean.csv
+Group spectra -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_group_spectra_mean.png
+fit screen: 196 of 7110 epochs dropped at z > 2.0
+model fit across retained epochs: 0.1490 +/- 0.0204 (mean +/- SD, error)
+40 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_beta_mean.csv
+Group spectra -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_group_spectra_mean.png
+fit screen: 196 of 7120 epochs dropped at z > 2.0
+model fit across retained epochs: 0.1764 +/- 0.0175 (mean +/- SD, error)
+40 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_beta.csv
+Group spectra -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h4_group_spectra.png

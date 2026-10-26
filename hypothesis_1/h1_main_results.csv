@@ -1,0 +1,2 @@
+"sample","n","t","df","p_one_tailed","ci_bound_95","cohens_dz","mean_delta_ON","mean_delta_OFF","median_delta_ON","median_delta_OFF","mean_diff","median_diff","bf10","decision"
+"full_current_sample",7,0.890648253940733,6,0.203705309015243,-0.00971634498455828,0.336633397937298,0.0408706465666386,0.0326487155691123,0.0459846446265947,0.0245815471967873,0.0082219309975263,0.0164877768223464,0.750786407530315,"inconclusive"

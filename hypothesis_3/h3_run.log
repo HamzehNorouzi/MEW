@@ -1,0 +1,87 @@
+hx_01    ON 64/64   OFF 77/78   AutoReject dropped 4
+hx_02    ON 65/74   OFF 48/68   AutoReject dropped 30
+hx_03    ON 53/53   OFF 55/55   AutoReject dropped 0
+hx_04    ON 76/99   OFF 79/96   AutoReject dropped 43
+hx_05    ON 96/100   OFF 55/57   AutoReject dropped 9
+hx_06    ON 70/99   OFF 92/100   AutoReject dropped 38
+hx_07    ON 94/95   OFF 95/100   AutoReject dropped 10
+hx_08    ON 90/93   OFF 79/81   AutoReject dropped 11
+hx_09    ON 88/89   OFF 90/91   AutoReject dropped 4
+hx_10    ON 78/79   OFF 95/96   AutoReject dropped 5
+hx_11    ON 70/70   OFF 90/90   AutoReject dropped 6
+hx_12    ON 73/73   OFF 81/81   AutoReject dropped 2
+hx_13    excluded: 15 ON and 13 OFF trials after AutoReject
+hx_14    ON 91/91   OFF 98/98   AutoReject dropped 4
+hx_15    ON 68/94   OFF 83/86   AutoReject dropped 33
+hx_16    ON 74/95   OFF 84/88   AutoReject dropped 28
+hx_17    ON 83/97   OFF 70/84   AutoReject dropped 30
+hx_18    ON 59/59   OFF 101/101   AutoReject dropped 3
+hx_19    excluded: 8 ON and 16 OFF trials after AutoReject
+hx_20    ON 92/94   OFF 85/86   AutoReject dropped 7
+hx_21    ON 49/49   OFF 39/39   AutoReject dropped 2
+hx_22    ON 61/76   OFF 53/92   AutoReject dropped 61
+hx_23    ON 74/92   OFF 46/89   AutoReject dropped 65
+hx_24    ON 50/50   OFF 73/74   AutoReject dropped 6
+hx_25    excluded: 190 ON and 0 OFF trials after AutoReject
+hx_26    ON 50/50   OFF 100/100   AutoReject dropped 1
+hx_27    ON 32/33   OFF 55/55   AutoReject dropped 4
+hx_28    ON 44/46   OFF 49/49   AutoReject dropped 4
+hx_29    ON 41/41   OFF 49/49   AutoReject dropped 3
+hx_30    excluded: 19 ON and 29 OFF trials after AutoReject
+hx_31    ON 92/92   OFF 83/83   AutoReject dropped 7
+hx_32    ON 74/87   OFF 67/73   AutoReject dropped 26
+hx_33    excluded: ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [0.0, 1.0]
+hx_34    excluded: 34 ON and 3 OFF trials after AutoReject
+hx_35    ON 94/98   OFF 73/78   AutoReject dropped 12
+hx_36    ON 80/81   OFF 82/82   AutoReject dropped 7
+hx_37    excluded: 38 ON and 28 OFF trials after AutoReject
+hx_38    ON 92/97   OFF 79/87   AutoReject dropped 16
+hx_39    excluded: 0 ON and 20 OFF trials after AutoReject
+hx_40    excluded: 49 ON and 23 OFF trials after AutoReject
+hx_41    ON 76/78   OFF 43/83   AutoReject dropped 43
+hx_42    excluded: ValueError: The test_size = 1 should be greater or equal to the number of classes = 2
+Non-default settings (AVERAGING='mean', BASELINE_MODE='onset') -- outputs tagged '_mean'
+32 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_4/h3_ers_mean.csv
+hx_01    ON 64/64   OFF 77/78   AutoReject dropped 4
+hx_02    ON 65/74   OFF 48/68   AutoReject dropped 30
+hx_03    ON 53/53   OFF 55/55   AutoReject dropped 0
+hx_04    ON 76/99   OFF 79/96   AutoReject dropped 43
+hx_05    ON 96/100   OFF 55/57   AutoReject dropped 9
+hx_06    ON 70/99   OFF 92/100   AutoReject dropped 38
+hx_07    ON 94/95   OFF 95/100   AutoReject dropped 10
+hx_08    ON 90/93   OFF 79/81   AutoReject dropped 11
+hx_09    ON 88/89   OFF 90/91   AutoReject dropped 4
+hx_10    ON 78/79   OFF 95/96   AutoReject dropped 5
+hx_11    ON 70/70   OFF 90/90   AutoReject dropped 6
+hx_12    ON 73/73   OFF 81/81   AutoReject dropped 2
+hx_13    excluded: 15 ON and 13 OFF trials after AutoReject
+hx_14    ON 91/91   OFF 98/98   AutoReject dropped 4
+hx_15    ON 68/94   OFF 83/86   AutoReject dropped 33
+hx_16    ON 74/95   OFF 84/88   AutoReject dropped 28
+hx_17    ON 83/97   OFF 70/84   AutoReject dropped 30
+hx_18    ON 59/59   OFF 101/101   AutoReject dropped 3
+hx_19    excluded: 8 ON and 16 OFF trials after AutoReject
+hx_20    ON 92/94   OFF 85/86   AutoReject dropped 7
+hx_21    ON 49/49   OFF 39/39   AutoReject dropped 2
+hx_22    ON 61/76   OFF 53/92   AutoReject dropped 61
+hx_23    ON 74/92   OFF 46/89   AutoReject dropped 65
+hx_24    ON 50/50   OFF 73/74   AutoReject dropped 6
+hx_25    excluded: 190 ON and 0 OFF trials after AutoReject
+hx_26    ON 50/50   OFF 100/100   AutoReject dropped 1
+hx_27    ON 32/33   OFF 55/55   AutoReject dropped 4
+hx_28    ON 44/46   OFF 49/49   AutoReject dropped 4
+hx_29    ON 41/41   OFF 49/49   AutoReject dropped 3
+hx_30    excluded: 19 ON and 29 OFF trials after AutoReject
+hx_31    ON 92/92   OFF 83/83   AutoReject dropped 7
+hx_32    ON 74/87   OFF 67/73   AutoReject dropped 26
+hx_33    excluded: ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [0.0, 1.0]
+hx_34    excluded: 34 ON and 3 OFF trials after AutoReject
+hx_35    ON 94/98   OFF 73/78   AutoReject dropped 12
+hx_36    ON 80/81   OFF 82/82   AutoReject dropped 7
+hx_37    excluded: 38 ON and 28 OFF trials after AutoReject
+hx_38    ON 92/97   OFF 79/87   AutoReject dropped 16
+hx_39    excluded: 0 ON and 20 OFF trials after AutoReject
+hx_40    excluded: 49 ON and 23 OFF trials after AutoReject
+hx_41    ON 76/78   OFF 43/83   AutoReject dropped 43
+hx_42    excluded: ValueError: The test_size = 1 should be greater or equal to the number of classes = 2
+32 participants -> /home/hamzeh/Documents/MEAOW_project/hypothesis_3/h3_ers.csv
