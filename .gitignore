@@ -8,3 +8,25 @@ EEG_Dataset/
 EEG_Dataset
 derivatives
 scripts/utils
+EEG_Dataset
+.venv
+derivatives
+
+# from scripts/.gitignore
+# Python Environment
+.venv/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+
+# from scripts/.gitignore
+# Python Environment
+.venv/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+
